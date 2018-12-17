@@ -1,0 +1,27 @@
+.hero-image {
+  margin-bottom: 15rem;
+  height: 90vh;
+  position: relative;
+  background-size: cover;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-grey, 0.4),
+                  rgba($color-grey, 0.4)
+  ),
+  url(/images/hero-image.jpg);
+  background-position: top;
+  &__content-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+  }
+  .hero-buttons {
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+}

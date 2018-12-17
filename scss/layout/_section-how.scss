@@ -1,0 +1,23 @@
+.section-how-it-works {
+  font-family: SFProText,sans-serif;
+
+  .section-title {
+    margin-bottom: 5rem;
+  }
+  .text-content {
+    text-align: center;
+    .title {
+      font-weight: $font-weight-bold;
+      font-size: 2.5rem;
+    }
+    .subtitle {
+      font-size: 1.8rem;
+      color: $color-grey-light-2;
+    }
+    svg {
+      width: 7.5rem;
+      height: 7.5rem;
+      color: $color-primary;
+    }
+  }
+}

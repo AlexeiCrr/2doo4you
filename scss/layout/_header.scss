@@ -1,0 +1,45 @@
+.site-header {
+  font-family: CocomatLight, sans-serif;
+  font-weight: $font-weight-light;
+  height: 70px;
+  padding: 0 3.6rem 0 5rem;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.03);
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0;
+    height: 100%;
+    .menu {
+      display: flex;
+      align-items: center;
+      li {
+        a {
+          color: $black;
+        }
+        &:not(last-of-type) {
+          margin-right: 5rem;
+        }
+      }
+    }
+    .block-right {
+      display: flex;
+      align-items: center;
+    }
+    .dropdown {
+      &:hover {
+        &dropdown__content {
+          opacity: 1;
+          max-height: 500px;
+        }
+      }
+      &__content {
+        @include transition();
+        visibility: hidden;
+        position: absolute;
+        //opacity: 0;
+        max-height: 0;
+      }
+    }
+  }
+}

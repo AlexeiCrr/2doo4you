@@ -1,0 +1,39 @@
+//Open Sans
+@include font-face(OpenSans, fonts/OpenSans-Bold, bold, null, ttf);
+@include font-face(OpenSans, fonts/OpenSans-Light, light, null, ttf);
+@include font-face(OpenSans, fonts/OpenSans-Regular, regular, null, ttf);
+@include font-face(OpenSans, fonts/OpenSans-SemiBold, semibold, null, ttf);
+//SFProText
+@include font-face(SFProTextBold, fonts/SFProText-Bold, bold, null, ttf);
+@include font-face(SFProTextHeavy, fonts/SFProText-Heavy, heavy, null, ttf);
+@include font-face(SFProTextSemiBold, fonts/SFProText-SemiBold, 600, null, ttf);
+@include font-face(SFProTextLight, fonts/SFProText-light, light, null, ttf);
+@include font-face(SFProText, fonts/SFProText-Regular, regular, null, ttf);
+@include font-face(SFProTextItalic, fonts/SFProText-RegularItalic, regular, italic, ttf);
+@include font-face(SFProText, fonts/SFProText-LightItalic, light, italic, ttf);
+//Cocomat
+@include font-face(CocomatUltraLight, fonts/Cocomat-Ultralight, 300, null, ttf);
+@include font-face(CocomatLight, fonts/Cocomat-Light, regular, null, ttf);
+//Exo
+@include font-face(Exo, fonts/Exo-Black, black, null, ttf);
+@include font-face(Exo, fonts/Exo-BlackItalic, black, italic, ttf);
+@include font-face(Exo, fonts/Exo-Bold, bold, null, ttf);
+@include font-face(Exo, fonts/Exo-BoldItalic, bold, italic, ttf);
+@include font-face(Exo, fonts/Exo-ExtraBoldItalic, extrabold, italic, ttf);
+@include font-face(Exo, fonts/Exo-ExtraBold, bold, null, ttf);
+@include font-face(Exo, fonts/Exo-ExtraLight, extralight, null, ttf);
+@include font-face(Exo, fonts/Exo-ExtraLight, extralight, italic, ttf);
+@include font-face(Exo, fonts/Exo-Italic, regular, italic, ttf);
+@include font-face(Exo, fonts/Exo-Italic, regular, null, ttf);
+@include font-face(Exo, fonts/Exo-Light, light, null, ttf);
+@include font-face(Exo, fonts/Exo-LightItalic, light, italic, ttf);
+@include font-face(Exo, fonts/Exo-Medium, medium, italic, ttf);
+@include font-face(Exo, fonts/Exo-MediumItalic, medium, italic, ttf);
+@include font-face(Exo, fonts/Exo-Semibold, semibold, null, ttf);
+@include font-face(Exo, fonts/Exo-SemiboldItalic, semibold, italic, ttf);
+@include font-face(Exo, fonts/Exo-Thin, thin, null, ttf);
+@include font-face(Exo, fonts/Exo-ThinItalic, thin, italic, ttf);
+//Fontawesome Webfont
+@include font-face(FontAwesome,fonts/fa-brands-400);
+@include font-face(FontAwesome,fonts/fa-regular-400);
+@include font-face(FontAwesome,fonts/fa-solid-900);

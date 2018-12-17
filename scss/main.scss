@@ -1,0 +1,21 @@
+//Vars and mixins
+@import 'abstracts/variables';
+@import "abstracts/mixins";
+@import "abstracts/font-mixins";
+//Resets and base styles
+@import "base/fonts";
+@import 'base/index';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+@import 'base/animations';
+//different components
+@import "components/button";
+@import "components/hero-section";
+@import "components/carousel";
+//Layout components
+@import "layout/header";
+@import "layout/footer";
+@import "layout/section-services";
+@import "layout/section-how";
+
