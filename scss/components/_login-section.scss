@@ -14,12 +14,12 @@
   align-items: center;
   &__content-inner {
     .login-main{
-      //height: 68rem;
       background: $color-white;
       border-radius: 14px;
       padding: 6rem 4rem;
       &__title{
-        font-family: SFProTextHeavy;
+        font-family: SFProText;
+        font-weight: 600;
         font-size: 4rem;
         text-transform: uppercase;
         letter-spacing: 0.025rem;

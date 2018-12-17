@@ -4656,7 +4656,8 @@ body {
     border-radius: 14px;
     padding: 6rem 4rem; }
     .section-login__content-inner .login-main__title {
-      font-family: SFProTextHeavy;
+      font-family: SFProText;
+      font-weight: 600;
       font-size: 4rem;
       text-transform: uppercase;
       letter-spacing: 0.025rem;
