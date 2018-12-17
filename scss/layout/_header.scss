@@ -25,24 +25,27 @@
           }
           &:after {
             transform: rotate(-180deg);
-
           }
-        }
-        a {
-          @include transition();
-          color: $black;
-          &:after {
-            content: '';
-            height: 1px;
-            width: 2px;
-            background-color: $color-primary;
-            opacity: 0;
-          }
-          &:hover {
+          a {
             &:after {
               opacity: 1;
               width: 100%;
             }
+          }
+        }
+        a {
+          color: $black;
+          position: relative;
+          &:after {
+            @include transition();
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 2px;
+            background-color: $color-primary;
+            opacity: 0;
           }
         }
       }
@@ -95,7 +98,7 @@
       }
     }
     .selectpicker {
-      border : none;
+      border: none;
       cursor: pointer;
       margin-left: 4.5rem;
     }

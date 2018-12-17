@@ -4246,8 +4246,9 @@ body {
   font-weight: 600; }
 
 .btn--blue {
-  background-color: #2CACF3;
-  color: #fff; }
+  background-color: #2CACF3; }
+  .btn--blue a {
+    color: #fff; }
   .btn--blue::after {
     background-color: #2CACF3; }
 
@@ -4314,21 +4315,25 @@ body {
         .site-header .navbar .menu li:hover:after {
           -webkit-transform: rotate(-180deg);
                   transform: rotate(-180deg); }
+        .site-header .navbar .menu li:hover a:after {
+          opacity: 1;
+          width: 100%; }
         .site-header .navbar .menu li a {
-          transition: all 0.2s ease-in-out;
-          color: #000; }
-          @media screen and (prefers-reduced-motion: reduce) {
-            .site-header .navbar .menu li a {
-              transition: none; } }
+          color: #000;
+          position: relative; }
           .site-header .navbar .menu li a:after {
+            transition: all 0.2s ease-in-out;
             content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
             height: 1px;
             width: 2px;
             background-color: #2CACF3;
             opacity: 0; }
-          .site-header .navbar .menu li a:hover:after {
-            opacity: 1;
-            width: 100%; }
+            @media screen and (prefers-reduced-motion: reduce) {
+              .site-header .navbar .menu li a:after {
+                transition: none; } }
     .site-header .navbar .block-right {
       display: flex;
       align-items: center; }
