@@ -26,7 +26,7 @@
           &:after {
             transform: rotate(-180deg);
           }
-          a {
+          & > a {
             &:after {
               opacity: 1;
               width: 100%;
