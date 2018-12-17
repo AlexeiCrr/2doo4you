@@ -12,8 +12,9 @@
 //different components
 @import "components/button";
 @import "components/hero-section";
-@import "components/login-section";
-@import "components/sign-up-customer-section";
+@import "layout/login-section";
+@import "layout/sign-up-customer-section";
+@import "layout/post-request-section";
 @import "components/carousel";
 //Layout components
 @import "layout/header";

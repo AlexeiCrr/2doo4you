@@ -10,4 +10,10 @@ $(document).ready(function () {
         // nextArrow: '<i class="fa fa-angle-right"></i>',
         // prevArrow: '<i class="fa fa-angle-left"></i>',
     });
+    
+    $('.form-row__actions a').on('click', function (e) {
+      e.preventDefault();
+      $('.form-row__actions a').removeClass('active');
+      $(this).addClass('active');
+    });
 });
