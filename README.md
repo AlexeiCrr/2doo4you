@@ -1,6 +1,7 @@
-# Parcel JS Bootstrap v4 Boilerplate
+# 2doo4you Project
 
-Created parceljs with bootstrap v4. With simple Jokes API fetch.
+
+Created with the use of parceljs with bootstrap v4.
 
 
 ### Installing
@@ -9,7 +10,7 @@ Juts follow the simple steps
 You need to parcel globally installed on your machine
 
 ```
-git clone https://github.com/Qurus/parcel.git
+git@github.com:Skyrockerrz/2doo4you.git
 ```
 ```
 cd parcel
