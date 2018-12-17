@@ -4485,6 +4485,9 @@ body {
     body {
       padding: 0; } }
 
+a:hover {
+  text-decoration: none; }
+
 ::-moz-selection {
   background-color: #2CACF3;
   color: #fff; }
@@ -4542,6 +4545,9 @@ body {
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
+
+.u-margin-right-medium {
+  margin-right: 3rem; }
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
@@ -4611,6 +4617,9 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s; }
+
+.btn--login {
+  border: solid 1px #2CACF3; }
 
 .hero-image {
   margin-bottom: 15rem;
@@ -4760,27 +4769,88 @@ body {
     .site-header .navbar .menu {
       display: flex;
       align-items: center; }
-      .site-header .navbar .menu li a {
-        color: #000; }
-      .site-header .navbar .menu li:not(last-of-type) {
-        margin-right: 5rem; }
+      .site-header .navbar .menu li {
+        margin-right: 5rem;
+        cursor: pointer; }
+        .site-header .navbar .menu li:hover ul {
+          opacity: 1;
+          max-height: 500px;
+          visibility: visible;
+          -webkit-transform: translateY(0);
+                  transform: translateY(0); }
+        .site-header .navbar .menu li:hover:after {
+          -webkit-transform: rotate(-180deg);
+                  transform: rotate(-180deg); }
+        .site-header .navbar .menu li a {
+          transition: all 0.2s ease-in-out;
+          color: #000; }
+          @media screen and (prefers-reduced-motion: reduce) {
+            .site-header .navbar .menu li a {
+              transition: none; } }
+          .site-header .navbar .menu li a:after {
+            content: '';
+            height: 1px;
+            width: 2px;
+            background-color: #2CACF3;
+            opacity: 0; }
+          .site-header .navbar .menu li a:hover:after {
+            opacity: 1;
+            width: 100%; }
     .site-header .navbar .block-right {
       display: flex;
       align-items: center; }
-    .site-header .navbar .dropdown:hoverdropdown__content {
-      opacity: 1;
-      max-height: 500px; }
-    .site-header .navbar .dropdown__content {
-      transition: all 0.2s ease-in-out;
-      visibility: hidden;
-      position: absolute;
-      max-height: 0; }
-      @media screen and (prefers-reduced-motion: reduce) {
-        .site-header .navbar .dropdown__content {
-          transition: none; } }
+    .site-header .navbar .dropdown {
+      position: relative; }
+      .site-header .navbar .dropdown:after {
+        transition: all 0.2s ease-in-out;
+        content: '\f107';
+        font-family: FontAwesome;
+        position: absolute;
+        right: -2rem;
+        top: 0.1rem;
+        font-size: 16px; }
+        @media screen and (prefers-reduced-motion: reduce) {
+          .site-header .navbar .dropdown:after {
+            transition: none; } }
+      .site-header .navbar .dropdown__content {
+        transition: all 0.2s ease-in-out;
+        visibility: hidden;
+        position: absolute;
+        opacity: 0;
+        max-height: 0;
+        z-index: 20;
+        top: 3.5rem;
+        left: -100px;
+        background-color: #fff;
+        -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+        box-shadow: -1px 0rem 3rem rgba(0, 0, 0, 0.3);
+        border-radius: 8px 8px; }
+        @media screen and (prefers-reduced-motion: reduce) {
+          .site-header .navbar .dropdown__content {
+            transition: none; } }
+        .site-header .navbar .dropdown__content:before {
+          content: '\f0d8';
+          font-family: FontAwesome;
+          position: absolute;
+          top: -3.2rem;
+          right: 1.8rem;
+          color: #fff;
+          font-size: 3.5rem; }
+        .site-header .navbar .dropdown__content li {
+          padding: 1rem 2.5rem;
+          margin-right: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+    .site-header .navbar .selectpicker {
+      border: none;
+      cursor: pointer;
+      margin-left: 4.5rem; }
 
 .section-services {
-  height: 500px; }
+  padding-bottom: 150px; }
   .section-services .section-title {
     margin-bottom: 6rem; }
   .section-services .carousel__item {
@@ -4837,7 +4907,10 @@ body {
       font-size: 40px; }
 
 .section-how-it-works {
-  font-family: SFProText,sans-serif; }
+  font-family: SFProText, sans-serif;
+  border-bottom: solid 1px rgba(33, 33, 33, 0.2);
+  border-top: solid 1px rgba(33, 33, 33, 0.2);
+  padding: 150px 0; }
   .section-how-it-works .section-title {
     margin-bottom: 5rem; }
   .section-how-it-works .text-content {

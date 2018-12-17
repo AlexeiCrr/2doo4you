@@ -1,6 +1,8 @@
 .section-how-it-works {
-  font-family: SFProText,sans-serif;
-
+  font-family: SFProText, sans-serif;
+  border-bottom: solid 1px rgba($color-grey-dark, .2);
+  border-top: solid 1px rgba($color-grey-dark, .2);
+  padding: 150px 0;
   .section-title {
     margin-bottom: 5rem;
   }

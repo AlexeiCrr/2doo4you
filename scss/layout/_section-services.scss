@@ -1,5 +1,5 @@
 .section-services {
-  height: 500px;
+  padding-bottom: 150px;
   .section-title {
     margin-bottom: 6rem;
   }
@@ -28,14 +28,17 @@
     }
   }
 }
+
 /* the slides */
 .slick-slide {
   margin: 0 27px;
 }
+
 /* the parent */
 .slick-list {
   margin: 0 -27px;
 }
+
 .slick-arrow {
   position: absolute;
   top: 33%;
@@ -43,7 +46,7 @@
   background: transparent;
   border: 0;
   outline: 0;
-  &.slick-prev{
+  &.slick-prev {
     left: -65px;
     font-size: 0;
     &:before {
@@ -52,7 +55,7 @@
       font-size: 40px;
     }
   }
-  &.slick-next{
+  &.slick-next {
     right: -65px;
     &:before {
       content: '\f105';

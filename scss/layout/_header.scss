@@ -14,11 +14,36 @@
       display: flex;
       align-items: center;
       li {
-        a {
-          color: $black;
+        margin-right: 5rem;
+        cursor: pointer;
+        &:hover {
+          ul {
+            opacity: 1;
+            max-height: 500px;
+            visibility: visible;
+            transform: translateY(0);
+          }
+          &:after {
+            transform: rotate(-180deg);
+
+          }
         }
-        &:not(last-of-type) {
-          margin-right: 5rem;
+        a {
+          @include transition();
+          color: $black;
+          &:after {
+            content: '';
+            height: 1px;
+            width: 2px;
+            background-color: $color-primary;
+            opacity: 0;
+          }
+          &:hover {
+            &:after {
+              opacity: 1;
+              width: 100%;
+            }
+          }
         }
       }
     }
@@ -27,19 +52,52 @@
       align-items: center;
     }
     .dropdown {
-      &:hover {
-        &dropdown__content {
-          opacity: 1;
-          max-height: 500px;
-        }
+      position: relative;
+      &:after {
+        @include transition();
+        content: '\f107';
+        font-family: FontAwesome;
+        position: absolute;
+        right: -2rem;
+        top: 0.1rem;
+        font-size: 16px;
       }
       &__content {
         @include transition();
         visibility: hidden;
         position: absolute;
-        //opacity: 0;
+        opacity: 0;
         max-height: 0;
+        z-index: 20;
+        top: 3.5rem;
+        left: -100px;
+        background-color: $white;
+        transform: translateY(-15px);
+        box-shadow: -1px 0rem 3rem rgba(0, 0, 0, 0.3);
+        border-radius: 8px 8px;
+        &:before {
+          content: '\f0d8';
+          font-family: FontAwesome;
+          position: absolute;
+          top: -3.2rem;
+          right: 1.8rem;
+          color: $white;
+          font-size: 3.5rem;
+        }
+        li {
+          padding: 1rem 2.5rem;
+          margin-right: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
       }
+    }
+    .selectpicker {
+      border : none;
+      cursor: pointer;
+      margin-left: 4.5rem;
     }
   }
 }

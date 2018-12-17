@@ -34,6 +34,12 @@ body {
   }
 }
 
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 ::selection {
   background-color: $color-primary;
   color: $color-white;
