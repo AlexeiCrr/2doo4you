@@ -64,6 +64,13 @@
     transition: all 0.4s;
   }
 }
+.btn-block {
+  height: 50px;
+  font-size: 18px;
+  font-family: SFProTextHeavy, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
 
 .btn--login {
   border: solid 1px $color-primary;

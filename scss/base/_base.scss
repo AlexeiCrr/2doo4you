@@ -27,6 +27,10 @@ ul {
   }
 }
 
+.main {
+  min-height: 70rem;
+}
+
 body {
   box-sizing: border-box;
   @include respond(tab-port) {

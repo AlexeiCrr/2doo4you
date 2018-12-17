@@ -1,0 +1,53 @@
+.section-settings {
+  min-height: 50rem;
+  .heading-settings {
+    font-family: SFProTextBold, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 7rem;
+  }
+  .settings-tab {
+    display: flex;
+    .nav {
+      border-right: 1px solid #ECECEC;
+    }
+    .nav-pills {
+      padding-top: 10rem;
+      padding-right: 7rem;
+      .tips {
+        display: none;
+        font-size: 13px;
+        max-width: 19rem;
+        letter-spacing: 0.08px;
+        color: #828282;
+      }
+      .nav-link {
+        font-family: SFProTextSemiBold;
+        font-size: 1.8rem;
+        color: $color-black;
+        &.active {
+          font-family: SFProTextBold;
+          background: transparent;
+        }
+      }
+    }
+    .tab-content {
+      margin-left: 6.4rem;
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+      .form-group {
+        width: 40rem;
+        input {
+          height: 5rem;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  .nav-link {
+    &.active {
+      .tips {
+        display: block;
+      }
+    }
+  }
+}
