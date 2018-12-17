@@ -1,0 +1,149 @@
+.section-login {
+  height: 86rem;
+  position: relative;
+  background-size: cover;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-grey, 0.4),
+                  rgba($color-grey, 0.4)
+  ),
+  url(/images/hero-image.jpg);
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content-inner {
+    .login-main{
+      height: 68rem;
+      background: $color-white;
+      border-radius: 14px;
+      padding: 6rem 4rem;
+      &__title{
+        font-family: SFProTextHeavy;
+        font-size: 4rem;
+        text-transform: uppercase;
+        letter-spacing: 0.025rem;
+        margin-bottom: 2.5rem;
+      }
+      .login-form{
+        .form-group{
+          margin-bottom: 1.3rem;
+          font-family: SFProTextLight;
+          input{
+            border: 1px solid rgba(0,0,0,0.38);
+            border-radius: 9px;
+            font-family: SFProTextLight;
+            font-size: 2rem;
+            height: 5.4rem;
+            padding: 0.375rem 2rem;
+            &::placeholder{
+              color: #BCBCBC;
+              letter-spacing: 0.012rem;
+            }
+          }
+          &__actions{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4rem;
+            label{
+              font-family: SFProText;
+              font-weight: 600;
+              margin-bottom: 0;
+            }
+            input{
+              margin-right: 0.5rem;
+              height: auto;
+            }
+            .forgot-action{
+              color: $color-black;
+            }
+          }
+          &__submit{
+            button{
+              font-family: SFProTextHeavy;
+              font-size: 2.2rem;
+              letter-spacing: 0.014rem;
+              padding: 1.4rem;
+            }
+            a{
+              color: $color-black;
+              display: block;
+              font-family: SFProTextLight;
+              letter-spacing: 0.01rem;
+              margin: 1.2rem 0;
+              span{
+                font-family: SFProText;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+      .divided-line{
+        margin: 6rem 0;
+        h2 {
+          font-family: SFProTextLight;
+          width: 100%;
+          text-align: center;
+          border-bottom: 0.1rem solid $color-grey-light-3;
+          line-height: 0.1rem;
+          margin: 1rem 0 2rem;
+        }
+
+        h2 span {
+          background:#fff;
+          color: $color-grey-light-3;
+          font-size: 1.5rem;
+          padding:0 3rem;
+          text-transform: uppercase;
+        }
+      }
+      .connect-types{
+        &__title{
+          font-family: SFProTextSemiBold;
+          font-size: 1.8rem;
+          letter-spacing: 0.011rem;
+          text-align: center;
+        }
+        &__items{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-black;
+            height: 3.8rem;
+            width: 5.4rem;
+            box-shadow: 0 1px 5px 0 rgba(56,56,56,0.51);
+            border-radius: 4px;
+            margin: 1rem 1.5rem;
+            &:hover{
+              box-shadow: 1px 2px 6px 0 rgba(56,56,56,0.58);
+            }
+            &.facebook-connect{
+              background: #3B5998;
+              path{
+                fill: $color-white;
+              }
+            }
+            &.google-connect{
+              svg{
+                path{
+                  fill: #4285F4;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //.hero-buttons {
+  //  width: 55%;
+  //  margin: 0 auto;
+  //  display: flex;
+  //  justify-content: space-around;
+  //}
+}
