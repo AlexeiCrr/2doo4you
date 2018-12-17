@@ -7,6 +7,6 @@
 *.iml
 out
 gen
-
+/dist
 /.cache
 /node_modules

@@ -1,0 +1,49 @@
+.site-footer {
+  .upper-footer {
+    background-color: $color-grey;
+    font-family: CocomatLight;
+    padding: 4rem 10rem;
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      li {
+        margin-bottom: 2rem;
+      }
+      .nav-link {
+        white-space: nowrap;
+      }
+    }
+  }
+  .lower-footer {
+    font-family: Exo, sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: $white;
+    background-color: $color-grey-dark;
+    padding: 2.5rem 10rem;
+    display: flex;
+    justify-content: flex-start;
+    p {
+      margin-bottom: 0;
+      margin-right: 5rem;
+    }
+    .language-selection {
+      display: flex;
+      .nav-link {
+        &:hover {
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+  }
+  .nav {
+    li {
+      margin-right: 3.5rem;
+      a {
+        color: $white;
+        @include transition();
+      }
+    }
+  }
+}

@@ -34,6 +34,12 @@
 .text-color-primary {
   color: $color-primary;
 }
+.text-color-black {
+  color: $color-black;
+}
+.font-weight-semibold {
+  font-weight: $font-weight-semibold;
+}
 .container-big {
   max-width:125rem;
   margin: 0 auto;

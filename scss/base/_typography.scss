@@ -6,12 +6,16 @@ body {
 }
 
 .heading-primary {
-  font-family: Exo, sans-serif;
+  font-family: SFProTextSemiBold, sans-serif;
   color: $white;
   font-size: 4rem;
-  font-weight: $font-weight-bold;
   backface-visibility: hidden;
   margin-bottom: 1.5rem;
+}
+.heading-secondary {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: SFProTextSemiBold, sans-serif;
 }
 .section-title {
   font-size: 4rem;

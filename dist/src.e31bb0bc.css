@@ -4503,13 +4503,17 @@ body {
   color: #000; }
 
 .heading-primary {
-  font-family: Exo, sans-serif;
+  font-family: SFProTextSemiBold, sans-serif;
   color: #fff;
   font-size: 4rem;
-  font-weight: 700;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   margin-bottom: 1.5rem; }
+
+.heading-secondary {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: SFProTextSemiBold, sans-serif; }
 
 .section-title {
   font-size: 4rem;
@@ -4554,6 +4558,12 @@ body {
 
 .text-color-primary {
   color: #2CACF3; }
+
+.text-color-black {
+  color: #000; }
+
+.font-weight-semibold {
+  font-weight: 600; }
 
 .container-big {
   max-width: 125rem;
@@ -4601,8 +4611,9 @@ body {
   font-weight: 600; }
 
 .btn--blue {
-  background-color: #2CACF3;
-  color: #fff; }
+  background-color: #2CACF3; }
+  .btn--blue a {
+    color: #fff; }
   .btn--blue::after {
     background-color: #2CACF3; }
 
@@ -4919,21 +4930,25 @@ body {
         .site-header .navbar .menu li:hover:after {
           -webkit-transform: rotate(-180deg);
                   transform: rotate(-180deg); }
+        .site-header .navbar .menu li:hover > a:after {
+          opacity: 1;
+          width: 100%; }
         .site-header .navbar .menu li a {
-          transition: all 0.2s ease-in-out;
-          color: #000; }
-          @media screen and (prefers-reduced-motion: reduce) {
-            .site-header .navbar .menu li a {
-              transition: none; } }
+          color: #000;
+          position: relative; }
           .site-header .navbar .menu li a:after {
+            transition: all 0.2s ease-in-out;
             content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
             height: 1px;
             width: 2px;
             background-color: #2CACF3;
             opacity: 0; }
-          .site-header .navbar .menu li a:hover:after {
-            opacity: 1;
-            width: 100%; }
+            @media screen and (prefers-reduced-motion: reduce) {
+              .site-header .navbar .menu li a:after {
+                transition: none; } }
     .site-header .navbar .block-right {
       display: flex;
       align-items: center; }
@@ -4986,6 +5001,45 @@ body {
       border: none;
       cursor: pointer;
       margin-left: 4.5rem; }
+
+.site-footer .upper-footer {
+  background-color: #343434;
+  font-family: CocomatLight;
+  padding: 4rem 10rem; }
+  .site-footer .upper-footer .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%; }
+    .site-footer .upper-footer .footer-nav li {
+      margin-bottom: 2rem; }
+    .site-footer .upper-footer .footer-nav .nav-link {
+      white-space: nowrap; }
+
+.site-footer .lower-footer {
+  font-family: Exo, sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #212121;
+  padding: 2.5rem 10rem;
+  display: flex;
+  justify-content: flex-start; }
+  .site-footer .lower-footer p {
+    margin-bottom: 0;
+    margin-right: 5rem; }
+  .site-footer .lower-footer .language-selection {
+    display: flex; }
+    .site-footer .lower-footer .language-selection .nav-link:hover {
+      font-weight: 700; }
+
+.site-footer .nav li {
+  margin-right: 3.5rem; }
+  .site-footer .nav li a {
+    color: #fff;
+    transition: all 0.2s ease-in-out; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .site-footer .nav li a {
+        transition: none; } }
 
 .section-services {
   padding-bottom: 150px; }
@@ -5055,11 +5109,37 @@ body {
     text-align: center; }
     .section-how-it-works .text-content .title {
       font-weight: 700;
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      margin-top: 3.5rem; }
     .section-how-it-works .text-content .subtitle {
       font-size: 1.8rem;
       color: #707070; }
-    .section-how-it-works .text-content svg {
-      width: 7.5rem;
-      height: 7.5rem;
-      color: #2CACF3; }
+    .section-how-it-works .text-content .icon {
+      vertical-align: top;
+      height: 85px; }
+
+.section-app {
+  padding: 14rem 11rem;
+  position: relative; }
+  .section-app .smartphone {
+    background-image: url("iphone.d0be2d39.png");
+    background-position: center;
+    background-size: contain;
+    left: 7rem;
+    top: 6.5rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 30rem;
+    height: 54rem; }
+  .section-app .text-content {
+    max-width: 50%;
+    margin: 0 auto; }
+    .section-app .text-content p {
+      max-width: 50rem;
+      font-size: 2.2rem;
+      margin-bottom: 4rem; }
+  .section-app .badge-wrapper {
+    display: flex; }
+    .section-app .badge-wrapper .badge {
+      width: 242px;
+      margin-right: 4.8rem; }

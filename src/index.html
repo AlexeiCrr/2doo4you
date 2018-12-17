@@ -17,8 +17,8 @@
         <nav class="navbar">
             <ul class="menu">
                 <li>
-                    <a class="navbar-brand site-logo" href="#">
-                        <span class="d-inline-block align-top">Logo</span>
+                    <a class="navbar-brand site-logo" href="index.html">
+                        <img src="./images/logo.png" alt="Site logo">
                     </a>
                 </li>
                 <li class="dropdown dropdown--services">
@@ -60,13 +60,14 @@
             <div class="block-right">
                 <ul class="login-block">
                     <li>
-                        <button class="btn btn--small btn--white btn--login  u-margin-right-medium">Login</button>
-                        <button class="btn btn--small btn--blue" >Sign Up</button>
+                        <button class="btn btn--small btn--white btn--login  u-margin-right-medium"><a href="#">Sign
+                            In</a></button>
+                        <button class="btn btn--small btn--blue"><a href="#">Sign Up</a></button>
                     </li>
                 </ul>
                 <div class="form-group">
                     <select title="Language selector" class="selectpicker language-dropdown">
-                        <option> ENG</option>
+                        <option>ENG</option>
                         <option>RUS</option>
                         <option>GER</option>
                     </select>
@@ -80,8 +81,8 @@
                 We can help you, with everything and anything
             </div>
             <div class="hero-buttons">
-                <div class="btn btn--big btn--blue">Book Services</div>
-                <div class="btn btn--big btn--white">Post a Request</div>
+                <button class="btn btn--big btn--blue"><a href="#">Book Services</a></button>
+                <button class="btn btn--big btn--white"><a href="#">Post a Request</a></button>
             </div>
         </div>
     </div>
@@ -130,7 +131,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-content">
-                        <i class="far fa-calendar icon"></i>
+                        <img class="icon" src="./images/bookService.png" alt="Book service Icon ">
                         <h4 class="title">Book a service</h4>
                         <div class="subtitle">
                             Choose your service, and leave us
@@ -140,7 +141,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="text-content">
-                        <i class="fas fa-lock"></i>
+                        <img class="icon" src="./images/confirmService.png" alt="Confirm Service Icon">
                         <h4 class="title">Confirm service</h4>
                         <div class="subtitle">
                             We’ll confirm your booking along
@@ -150,7 +151,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="text-content">
-                        <i class="fas fa-home"></i>
+                        <img class="icon" src="./images/wellDoIt.png" alt="We'll Service Icon">
                         <h4 class="title">We’ll do it</h4>
                         <div class="subtitle">
                             Our professionals will come at your
@@ -161,9 +162,58 @@
             </div>
         </div>
     </section>
+    <section class="section-app">
+        <div class="container">
+            <div class="smartphone"></div>
+            <div class="text-content">
+                <h2 class="heading-primary text-color-black font-weight-semibold">
+                    Ready to <span class="text-color-primary">Became Pro</span> ?
+                </h2>
+                <p>Are you good on your trade? You are totally sure
+                    you can offer best service? 2doo4you, always
+                    looking for guys like you.</p>
+                <h2 class="heading-secondary">First, Download our app</h2>
+                <p>Manage your tasks, requests, profile and services
+                    through our app.</p>
+                <div class="badge-wrapper">
+                    <a class="badge" href="https://play.google.com/store/apps/details?id=2doo4you">
+                        <img alt="Get it on Google Play"
+                             src="images/google-256x256.png"/>
+                    </a>
+                    <a class="badge" href="#">
+                        <img src="images/apple-256x256.png" alt="Available on AppStore">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="site-footer mt-auto">
-        <div class="inner">
-            <p id="copy"></p>
+        <div class="upper-footer">
+            <ul class=" nav footer-nav row">
+                <li class="col-md-2"><a class="nav-link">Services</a></li>
+                <li class="col-md-2"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="col-md-3"><a class="nav-link" href="#">Terms and Conditions</a></li>
+                <li class="col-md-2"><a class="nav-link" href="#">Help</a></li>
+                <li class="col-md-2"><a class="nav-link" href="#">Became Pro</a></li>
+                <li class="col-md-2"><a class="nav-link" href="#">VIP Services</a></li>
+                <li class="col-md-2"><a class="nav-link" href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="lower-footer">
+            <p class="copyright">
+                &copy; 2doo4you 2018. All rights reserved
+            </p>
+            <ul class="nav language-selection">
+                <li>
+                    <a class="nav-link" href="#">English</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">German</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Russian</a>
+                </li>
+            </ul>
         </div>
     </footer>
 </main>

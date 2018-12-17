@@ -1,0 +1,31 @@
+.section-app {
+  padding: 14rem 11rem;
+  position: relative;
+  .smartphone {
+    background-image: url('/images/iphone.png');
+    background-position: center ;
+    background-size: contain;
+    left: 7rem;
+    top: 6.5rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 30rem;
+    height: 54rem;
+  }
+  .text-content {
+    max-width: 50%;
+    margin: 0 auto;
+    p {
+      max-width: 50rem;
+      font-size: 2.2rem;
+      margin-bottom: 4rem;
+    }
+  }
+  .badge-wrapper {
+    display: flex;
+    .badge {
+      width: 242px;
+      margin-right: 4.8rem;
+    }
+  }
+}
