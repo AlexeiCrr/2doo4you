@@ -27636,7 +27636,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _fontawesome.default.library.add(_fontawesomeFreeRegular.default);
 
 _fontawesome.default.library.add(_fontawesomeFreeSolid.default);
-},{"../scss/main.scss":"../scss/main.scss","../js/main":"../js/main.js","jquery":"../node_modules/jquery/dist/jquery.js","popper.js":"../node_modules/popper.js/dist/esm/popper.js","bootstrap":"../node_modules/bootstrap/dist/js/bootstrap.js","fs":"../../../AppData/Roaming/nvm/v11.4.0/node_modules/parcel-bundler/src/builtins/_empty.js","@fortawesome/fontawesome":"../node_modules/@fortawesome/fontawesome/index.es.js","@fortawesome/fontawesome-free-regular":"../node_modules/@fortawesome/fontawesome-free-regular/index.es.js","@fortawesome/fontawesome-free-solid":"../node_modules/@fortawesome/fontawesome-free-solid/index.es.js"}],"../../../AppData/Roaming/nvm/v11.4.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../scss/main.scss":"../scss/main.scss","../js/main":"../js/main.js","jquery":"../node_modules/jquery/dist/jquery.js","popper.js":"../node_modules/popper.js/dist/esm/popper.js","bootstrap":"../node_modules/bootstrap/dist/js/bootstrap.js","fs":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/_empty.js","@fortawesome/fontawesome":"../node_modules/@fortawesome/fontawesome/index.es.js","@fortawesome/fontawesome-free-regular":"../node_modules/@fortawesome/fontawesome-free-regular/index.es.js","@fortawesome/fontawesome-free-solid":"../node_modules/@fortawesome/fontawesome-free-solid/index.es.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -27663,7 +27663,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "28647" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59758" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -27805,5 +27805,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../../AppData/Roaming/nvm/v11.4.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/src.e31bb0bc.map
