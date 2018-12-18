@@ -4822,9 +4822,6 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
 
 ul {
   margin-bottom: 0; }
@@ -5265,6 +5262,162 @@ body {
         .section-sign-up-customer__content-inner .sign-up-main .connect-types__items a.google-connect svg path {
           fill: #4285F4; }
 
+.section-post-request {
+  background: #2CACF3;
+  padding: 4rem 0; }
+  .section-post-request__content-inner .sign-up-info {
+    color: #fff; }
+    .section-post-request__content-inner .sign-up-info .sign-up__logo {
+      margin: 20rem 0 10rem 0; }
+    .section-post-request__content-inner .sign-up-info .sign-up__text-content .text-content__info {
+      font-size: 1.6rem;
+      letter-spacing: 0.016rem;
+      margin-bottom: 5rem; }
+    .section-post-request__content-inner .sign-up-info .sign-up__text-content .text-content__title {
+      font-family: SFProText;
+      font-weight: 600;
+      font-size: 3rem;
+      letter-spacing: 0.019rem;
+      text-transform: uppercase; }
+    .section-post-request__content-inner .sign-up-info .sign-up__text-content .text-content__subtitle {
+      font-family: SFProTextLight;
+      font-size: 1.5rem;
+      letter-spacing: 0.012rem; }
+    .section-post-request__content-inner .sign-up-info .sign-up__app-download {
+      display: flex;
+      padding: 1.5rem 0; }
+      .section-post-request__content-inner .sign-up-info .sign-up__app-download a {
+        margin-right: 2rem; }
+  .section-post-request__content-inner .post-request-main {
+    background: #fff;
+    border-radius: 14px;
+    padding: 4rem 2rem 2rem 2rem; }
+    .section-post-request__content-inner .post-request-main__title {
+      font-family: SFProText;
+      font-weight: 600;
+      font-size: 3rem;
+      letter-spacing: 0.019rem;
+      margin-bottom: 2rem; }
+    .section-post-request__content-inner .post-request-main .post-request-form .form-group {
+      margin-bottom: 1.5rem;
+      font-family: SFProTextLight; }
+      .section-post-request__content-inner .post-request-main .post-request-form .form-group__label {
+        font-size: 2rem;
+        font-family: SFProTextLight;
+        font-weight: 600;
+        letter-spacing: 0.013rem; }
+      .section-post-request__content-inner .post-request-main .post-request-form .form-group input, .section-post-request__content-inner .post-request-main .post-request-form .form-group select {
+        border: 1px solid rgba(0, 0, 0, 0.17);
+        border-radius: 9px;
+        font-family: SFProTextLight;
+        font-size: 2rem;
+        height: 5.3rem;
+        padding: 0.375rem 2rem; }
+        .section-post-request__content-inner .post-request-main .post-request-form .form-group input::-webkit-input-placeholder, .section-post-request__content-inner .post-request-main .post-request-form .form-group select::-webkit-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .section-post-request__content-inner .post-request-main .post-request-form .form-group input:-ms-input-placeholder, .section-post-request__content-inner .post-request-main .post-request-form .form-group select:-ms-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .section-post-request__content-inner .post-request-main .post-request-form .form-group input::-ms-input-placeholder, .section-post-request__content-inner .post-request-main .post-request-form .form-group select::-ms-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .section-post-request__content-inner .post-request-main .post-request-form .form-group input::placeholder, .section-post-request__content-inner .post-request-main .post-request-form .form-group select::placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+      .section-post-request__content-inner .post-request-main .post-request-form .form-group select {
+        font-size: 1.8rem; }
+      .section-post-request__content-inner .post-request-main .post-request-form .form-group textarea {
+        font-family: SFProTextLight;
+        border-radius: 9px;
+        border: 1px solid rgba(0, 0, 0, 0.17);
+        font-size: 1.8rem;
+        padding: 0.375rem 2rem;
+        letter-spacing: 0.011rem; }
+        .section-post-request__content-inner .post-request-main .post-request-form .form-group textarea::-webkit-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .section-post-request__content-inner .post-request-main .post-request-form .form-group textarea:-ms-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .section-post-request__content-inner .post-request-main .post-request-form .form-group textarea::-ms-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .section-post-request__content-inner .post-request-main .post-request-form .form-group textarea::placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+      .section-post-request__content-inner .post-request-main .post-request-form .form-group__submit button {
+        font-family: SFProTextLight;
+        font-weight: 600;
+        font-size: 2.5rem;
+        letter-spacing: 0.016rem;
+        padding: 1.4rem; }
+      .section-post-request__content-inner .post-request-main .post-request-form .form-group__price {
+        display: flex; }
+        .section-post-request__content-inner .post-request-main .post-request-form .form-group__price input {
+          max-width: 17rem;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0; }
+        .section-post-request__content-inner .post-request-main .post-request-form .form-group__price .currency {
+          height: 5.3rem;
+          border: 1px solid rgba(0, 0, 0, 0.17);
+          border-radius: 9px;
+          border-left: 0;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          color: #2CACF3;
+          padding: 0 1.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 1.5rem;
+          text-transform: uppercase;
+          font-size: 1.8rem; }
+        .section-post-request__content-inner .post-request-main .post-request-form .form-group__price .form-check-inline {
+          margin-right: 1.5rem; }
+    .section-post-request__content-inner .post-request-main .post-request-form .form-row label {
+      width: 100%; }
+    .section-post-request__content-inner .post-request-main .post-request-form .form-row .form-check label {
+      font-size: 1.8rem; }
+    .section-post-request__content-inner .post-request-main .post-request-form .form-row .form-group {
+      margin-right: 3rem; }
+      .section-post-request__content-inner .post-request-main .post-request-form .form-row .form-group input {
+        font-size: 1.8rem;
+        letter-spacing: 0.011rem;
+        text-align: center; }
+    .section-post-request__content-inner .post-request-main .post-request-form .form-row__actions {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0.5rem;
+      margin-bottom: 1rem; }
+      .section-post-request__content-inner .post-request-main .post-request-form .form-row__actions a {
+        font-family: SFProTextLight;
+        border: 1px solid #686868;
+        border-radius: 9px;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7rem;
+        height: 4.6rem;
+        letter-spacing: 0.012rem; }
+        .section-post-request__content-inner .post-request-main .post-request-form .form-row__actions a.active, .section-post-request__content-inner .post-request-main .post-request-form .form-row__actions a:hover {
+          background: #686868;
+          color: #fff;
+          transition: all 0.2s ease-in-out; }
+          @media screen and (prefers-reduced-motion: reduce) {
+            .section-post-request__content-inner .post-request-main .post-request-form .form-row__actions a.active, .section-post-request__content-inner .post-request-main .post-request-form .form-row__actions a:hover {
+              transition: none; } }
+    .section-post-request__content-inner .post-request-main .post-request-form p {
+      font-family: SFProTextLight;
+      font-size: 1.4rem;
+      letter-spacing: 0.012rem; }
+      .section-post-request__content-inner .post-request-main .post-request-form p a {
+        color: #000;
+        font-weight: 600; }
+        .section-post-request__content-inner .post-request-main .post-request-form p a:hover {
+          text-decoration: underline; }
+
 .site-header {
   font-family: CocomatLight, sans-serif;
   font-weight: 300;
@@ -5543,3 +5696,493 @@ body {
           border-radius: 8px; }
   .section-settings .nav-link.active .tips {
     display: block; }
+
+.view-account {
+  padding: 4rem 0; }
+  .view-account__content-inner .post-request-main__title {
+    font-size: 2rem;
+    color: #2CACF3;
+    letter-spacing: 0.013rem; }
+  .view-account__content-inner .post-request-main .post-request-form {
+    background: #fff;
+    padding: 4rem 2rem 2rem 2rem;
+    border: 1px solid #CECECE;
+    border-radius: 9px; }
+    .view-account__content-inner .post-request-main .post-request-form__title {
+      font-family: SFProText;
+      font-weight: 600;
+      font-size: 3rem;
+      letter-spacing: 0.019rem;
+      margin-bottom: 2rem; }
+    .view-account__content-inner .post-request-main .post-request-form .form-group {
+      margin-bottom: 1.5rem;
+      font-family: SFProTextLight; }
+      .view-account__content-inner .post-request-main .post-request-form .form-group__label {
+        font-size: 2rem;
+        font-family: SFProTextLight;
+        font-weight: 600;
+        letter-spacing: 0.013rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-group input, .view-account__content-inner .post-request-main .post-request-form .form-group select {
+        border: 1px solid rgba(0, 0, 0, 0.17);
+        border-radius: 9px;
+        font-family: SFProTextLight;
+        font-size: 2rem;
+        height: 5.3rem;
+        padding: 0.375rem 2rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group input::-webkit-input-placeholder, .view-account__content-inner .post-request-main .post-request-form .form-group select::-webkit-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group input:-ms-input-placeholder, .view-account__content-inner .post-request-main .post-request-form .form-group select:-ms-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group input::-ms-input-placeholder, .view-account__content-inner .post-request-main .post-request-form .form-group select::-ms-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group input::placeholder, .view-account__content-inner .post-request-main .post-request-form .form-group select::placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-group select {
+        font-size: 1.8rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-group textarea {
+        font-family: SFProTextLight;
+        border-radius: 9px;
+        border: 1px solid rgba(0, 0, 0, 0.17);
+        font-size: 1.8rem;
+        padding: 0.375rem 2rem;
+        letter-spacing: 0.011rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group textarea::-webkit-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group textarea:-ms-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group textarea::-ms-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group textarea::placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-group__submit button {
+        font-family: SFProTextLight;
+        font-weight: 600;
+        font-size: 2.5rem;
+        letter-spacing: 0.016rem;
+        padding: 1.4rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-group__price {
+        display: flex; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group__price input {
+          max-width: 17rem;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group__price .currency {
+          height: 5.3rem;
+          border: 1px solid rgba(0, 0, 0, 0.17);
+          border-radius: 9px;
+          border-left: 0;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          color: #2CACF3;
+          padding: 0 1.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 1.5rem;
+          text-transform: uppercase;
+          font-size: 1.8rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group__price .form-check-inline {
+          margin-right: 1.5rem; }
+    .view-account__content-inner .post-request-main .post-request-form .form-row label {
+      width: 100%; }
+    .view-account__content-inner .post-request-main .post-request-form .form-row .form-check label {
+      font-size: 1.5rem; }
+    .view-account__content-inner .post-request-main .post-request-form .form-row .form-group {
+      margin-right: 3rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-row .form-group input {
+        font-size: 1.8rem;
+        letter-spacing: 0.011rem;
+        text-align: center; }
+    .view-account__content-inner .post-request-main .post-request-form .form-row__actions {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0.5rem;
+      margin-bottom: 1rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-row__actions a {
+        font-family: SFProTextLight;
+        border: 1px solid #686868;
+        border-radius: 9px;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7rem;
+        height: 4.6rem;
+        letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-row__actions a.active, .view-account__content-inner .post-request-main .post-request-form .form-row__actions a:hover {
+          background: #686868;
+          color: #fff;
+          transition: all 0.2s ease-in-out; }
+          @media screen and (prefers-reduced-motion: reduce) {
+            .view-account__content-inner .post-request-main .post-request-form .form-row__actions a.active, .view-account__content-inner .post-request-main .post-request-form .form-row__actions a:hover {
+              transition: none; } }
+    .view-account__content-inner .post-request-main .post-request-form p {
+      font-family: SFProTextLight;
+      font-size: 1.4rem;
+      letter-spacing: 0.012rem; }
+      .view-account__content-inner .post-request-main .post-request-form p a {
+        color: #000;
+        font-weight: 600; }
+        .view-account__content-inner .post-request-main .post-request-form p a:hover {
+          text-decoration: underline; }
+  .view-account__block .user-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem; }
+    .view-account__block .user-card .user-img {
+      height: 18rem;
+      width: 18rem;
+      border-radius: 50%;
+      background: #D8D8D8;
+      position: relative;
+      background-size: cover;
+      background-image: url(user-avatar.7c71fad4.png);
+      background-position: center; }
+    .view-account__block .user-card .user-main-info {
+      padding: 0 2rem; }
+      .view-account__block .user-card .user-main-info .user-name {
+        font-family: SFProTextHeavy;
+        font-size: 3rem;
+        letter-spacing: 0.019rem; }
+      .view-account__block .user-card .user-main-info .user-review {
+        display: flex; }
+        .view-account__block .user-card .user-main-info .user-review .reviews-count {
+          font-family: SFProTextLight;
+          margin-left: 1rem;
+          font-size: 1.5rem;
+          letter-spacing: 0.09rem; }
+      .view-account__block .user-card .user-main-info .insurance-presence {
+        font-family: SFProText;
+        color: #7ED321;
+        font-size: 1.8rem;
+        letter-spacing: 0.011rem; }
+        .view-account__block .user-card .user-main-info .insurance-presence svg {
+          margin-left: 1rem; }
+  .view-account__block .user-additional-info {
+    margin-bottom: 10rem; }
+    .view-account__block .user-additional-info .info-group {
+      margin-bottom: 4rem; }
+      .view-account__block .user-additional-info .info-group .label-info {
+        font-family: SFProText;
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: 0.014rem; }
+      .view-account__block .user-additional-info .info-group .user-description {
+        font-family: SFProTextLight;
+        font-size: 1.8rem;
+        letter-spacing: 0.011rem;
+        line-height: 3.6rem; }
+      .view-account__block .user-additional-info .info-group ul li {
+        font-family: SFProTextLight;
+        margin-bottom: 0.5rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.011rem; }
+    .view-account__block .user-additional-info .form-group__label {
+      font-size: 2.5rem;
+      font-family: SFProText;
+      font-weight: 600;
+      letter-spacing: 0.016rem; }
+    .view-account__block .user-additional-info .form-group textarea {
+      border: 1px solid #CECECE;
+      border-radius: 9px;
+      font-size: 1.8rem;
+      padding: 0.5rem 2rem; }
+      .view-account__block .user-additional-info .form-group textarea::-webkit-input-placeholder {
+        font-family: SFProTextLight;
+        font-size: 1.8rem;
+        color: #B5B5B5;
+        letter-spacing: 0.011rem; }
+      .view-account__block .user-additional-info .form-group textarea:-ms-input-placeholder {
+        font-family: SFProTextLight;
+        font-size: 1.8rem;
+        color: #B5B5B5;
+        letter-spacing: 0.011rem; }
+      .view-account__block .user-additional-info .form-group textarea::-ms-input-placeholder {
+        font-family: SFProTextLight;
+        font-size: 1.8rem;
+        color: #B5B5B5;
+        letter-spacing: 0.011rem; }
+      .view-account__block .user-additional-info .form-group textarea::placeholder {
+        font-family: SFProTextLight;
+        font-size: 1.8rem;
+        color: #B5B5B5;
+        letter-spacing: 0.011rem; }
+    .view-account__block .user-additional-info button {
+      height: 4rem;
+      max-width: 20rem; }
+  .view-account__block .reviews-section__title {
+    font-family: SFProText;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 0.016rem; }
+  .view-account__block .reviews-section .review-group {
+    margin-top: 4rem; }
+    .view-account__block .reviews-section .review-group__name {
+      font-family: SFProText;
+      font-size: 2.5rem;
+      letter-spacing: 0.016rem; }
+    .view-account__block .reviews-section .review-group__text {
+      font-family: SFProTextLight;
+      font-size: 1.8rem;
+      letter-spacing: 0.012rem;
+      margin-top: 2rem; }
+
+.stars-section svg {
+  cursor: pointer; }
+  .stars-section svg path {
+    fill: #CBCBCB; }
+  .stars-section svg.color_star path {
+    fill: #F2D900; }
+
+.view-account {
+  padding: 4rem 0; }
+  .view-account__content-inner .post-request-main__title {
+    font-size: 2rem;
+    color: #2CACF3;
+    letter-spacing: 0.013rem; }
+  .view-account__content-inner .post-request-main .post-request-form {
+    background: #fff;
+    padding: 4rem 2rem 2rem 2rem;
+    border: 1px solid #CECECE;
+    border-radius: 9px; }
+    .view-account__content-inner .post-request-main .post-request-form__title {
+      font-family: SFProText;
+      font-weight: 600;
+      font-size: 3rem;
+      letter-spacing: 0.019rem;
+      margin-bottom: 2rem; }
+    .view-account__content-inner .post-request-main .post-request-form .form-group {
+      margin-bottom: 1.5rem;
+      font-family: SFProTextLight; }
+      .view-account__content-inner .post-request-main .post-request-form .form-group__label {
+        font-size: 2rem;
+        font-family: SFProTextLight;
+        font-weight: 600;
+        letter-spacing: 0.013rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-group input, .view-account__content-inner .post-request-main .post-request-form .form-group select {
+        border: 1px solid rgba(0, 0, 0, 0.17);
+        border-radius: 9px;
+        font-family: SFProTextLight;
+        font-size: 2rem;
+        height: 5.3rem;
+        padding: 0.375rem 2rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group input::-webkit-input-placeholder, .view-account__content-inner .post-request-main .post-request-form .form-group select::-webkit-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group input:-ms-input-placeholder, .view-account__content-inner .post-request-main .post-request-form .form-group select:-ms-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group input::-ms-input-placeholder, .view-account__content-inner .post-request-main .post-request-form .form-group select::-ms-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group input::placeholder, .view-account__content-inner .post-request-main .post-request-form .form-group select::placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-group select {
+        font-size: 1.8rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-group textarea {
+        font-family: SFProTextLight;
+        border-radius: 9px;
+        border: 1px solid rgba(0, 0, 0, 0.17);
+        font-size: 1.8rem;
+        padding: 0.375rem 2rem;
+        letter-spacing: 0.011rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group textarea::-webkit-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group textarea:-ms-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group textarea::-ms-input-placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group textarea::placeholder {
+          color: #BCBCBC;
+          letter-spacing: 0.012rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-group__submit button {
+        font-family: SFProTextLight;
+        font-weight: 600;
+        font-size: 2.5rem;
+        letter-spacing: 0.016rem;
+        padding: 1.4rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-group__price {
+        display: flex; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group__price input {
+          max-width: 17rem;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group__price .currency {
+          height: 5.3rem;
+          border: 1px solid rgba(0, 0, 0, 0.17);
+          border-radius: 9px;
+          border-left: 0;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          color: #2CACF3;
+          padding: 0 1.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 1.5rem;
+          text-transform: uppercase;
+          font-size: 1.8rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-group__price .form-check-inline {
+          margin-right: 1.5rem; }
+    .view-account__content-inner .post-request-main .post-request-form .form-row label {
+      width: 100%; }
+    .view-account__content-inner .post-request-main .post-request-form .form-row .form-check label {
+      font-size: 1.5rem; }
+    .view-account__content-inner .post-request-main .post-request-form .form-row .form-group {
+      margin-right: 3rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-row .form-group input {
+        font-size: 1.8rem;
+        letter-spacing: 0.011rem;
+        text-align: center; }
+    .view-account__content-inner .post-request-main .post-request-form .form-row__actions {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0.5rem;
+      margin-bottom: 1rem; }
+      .view-account__content-inner .post-request-main .post-request-form .form-row__actions a {
+        font-family: SFProTextLight;
+        border: 1px solid #686868;
+        border-radius: 9px;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7rem;
+        height: 4.6rem;
+        letter-spacing: 0.012rem; }
+        .view-account__content-inner .post-request-main .post-request-form .form-row__actions a.active, .view-account__content-inner .post-request-main .post-request-form .form-row__actions a:hover {
+          background: #686868;
+          color: #fff;
+          transition: all 0.2s ease-in-out; }
+          @media screen and (prefers-reduced-motion: reduce) {
+            .view-account__content-inner .post-request-main .post-request-form .form-row__actions a.active, .view-account__content-inner .post-request-main .post-request-form .form-row__actions a:hover {
+              transition: none; } }
+    .view-account__content-inner .post-request-main .post-request-form p {
+      font-family: SFProTextLight;
+      font-size: 1.4rem;
+      letter-spacing: 0.012rem; }
+      .view-account__content-inner .post-request-main .post-request-form p a {
+        color: #000;
+        font-weight: 600; }
+        .view-account__content-inner .post-request-main .post-request-form p a:hover {
+          text-decoration: underline; }
+  .view-account__block .user-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem; }
+    .view-account__block .user-card .user-img {
+      height: 18rem;
+      width: 18rem;
+      border-radius: 50%;
+      background: #D8D8D8;
+      position: relative;
+      background-size: cover;
+      background-image: url(user-avatar.7c71fad4.png);
+      background-position: center; }
+    .view-account__block .user-card .user-main-info {
+      padding: 0 2rem; }
+      .view-account__block .user-card .user-main-info .user-name {
+        font-family: SFProTextHeavy;
+        font-size: 3rem;
+        letter-spacing: 0.019rem; }
+      .view-account__block .user-card .user-main-info .user-review {
+        display: flex; }
+        .view-account__block .user-card .user-main-info .user-review .reviews-count {
+          font-family: SFProTextLight;
+          margin-left: 1rem;
+          font-size: 1.5rem;
+          letter-spacing: 0.09rem; }
+      .view-account__block .user-card .user-main-info .insurance-presence {
+        font-family: SFProText;
+        color: #7ED321;
+        font-size: 1.8rem;
+        letter-spacing: 0.011rem; }
+        .view-account__block .user-card .user-main-info .insurance-presence svg {
+          margin-left: 1rem; }
+  .view-account__block .user-additional-info {
+    margin-bottom: 10rem; }
+    .view-account__block .user-additional-info .info-group {
+      margin-bottom: 4rem; }
+      .view-account__block .user-additional-info .info-group .label-info {
+        font-family: SFProText;
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: 0.014rem; }
+      .view-account__block .user-additional-info .info-group .user-description {
+        font-family: SFProTextLight;
+        font-size: 1.8rem;
+        letter-spacing: 0.011rem;
+        line-height: 3.6rem; }
+      .view-account__block .user-additional-info .info-group ul li {
+        font-family: SFProTextLight;
+        margin-bottom: 0.5rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.011rem; }
+    .view-account__block .user-additional-info .form-group__label {
+      font-size: 2.5rem;
+      font-family: SFProText;
+      font-weight: 600;
+      letter-spacing: 0.016rem; }
+    .view-account__block .user-additional-info .form-group textarea {
+      border: 1px solid #CECECE;
+      border-radius: 9px;
+      font-size: 1.8rem;
+      padding: 0.5rem 2rem; }
+      .view-account__block .user-additional-info .form-group textarea::-webkit-input-placeholder {
+        font-family: SFProTextLight;
+        font-size: 1.8rem;
+        color: #B5B5B5;
+        letter-spacing: 0.011rem; }
+      .view-account__block .user-additional-info .form-group textarea:-ms-input-placeholder {
+        font-family: SFProTextLight;
+        font-size: 1.8rem;
+        color: #B5B5B5;
+        letter-spacing: 0.011rem; }
+      .view-account__block .user-additional-info .form-group textarea::-ms-input-placeholder {
+        font-family: SFProTextLight;
+        font-size: 1.8rem;
+        color: #B5B5B5;
+        letter-spacing: 0.011rem; }
+      .view-account__block .user-additional-info .form-group textarea::placeholder {
+        font-family: SFProTextLight;
+        font-size: 1.8rem;
+        color: #B5B5B5;
+        letter-spacing: 0.011rem; }
+    .view-account__block .user-additional-info button {
+      height: 4rem;
+      max-width: 20rem; }
+  .view-account__block .reviews-section__title {
+    font-family: SFProText;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 0.016rem; }
+  .view-account__block .reviews-section .review-group {
+    margin-top: 4rem; }
+    .view-account__block .reviews-section .review-group__name {
+      font-family: SFProText;
+      font-size: 2.5rem;
+      letter-spacing: 0.016rem; }
+    .view-account__block .reviews-section .review-group__text {
+      font-family: SFProTextLight;
+      font-size: 1.8rem;
+      letter-spacing: 0.012rem;
+      margin-top: 2rem; }
+
+.stars-section svg {
+  cursor: pointer; }
+  .stars-section svg path {
+    fill: #CBCBCB; }
+  .stars-section svg.color_star path {
+    fill: #F2D900; }

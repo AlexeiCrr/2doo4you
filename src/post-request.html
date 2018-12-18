@@ -70,8 +70,8 @@
             </div>
         </nav>
     </header>
-    <section class="section-sign-up-customer">
-        <div class="section-sign-up-customer__content-inner container container-big">
+    <section class="section-post-request">
+        <div class="section-post-request__content-inner container container-big">
             <div class="row justify-content-between">
                 <div class="col-md-5 sign-up-info">
                     <div class="sign-up__logo">
@@ -148,53 +148,78 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-5 sign-up-main">
-                    <h3 class="sign-up-main__title">Hi there !</h3>
-                    <h4 class="sign-up-main__subtitle">Want to make is easy? Sign up</h4>
-                    <span class="sign-up-main__text-content">Please, enter your valid information. All fields are required.</span>
-                    <form class="sign-up-form">
+                <div class="col-md-5 post-request-main">
+                    <h3 class="post-request-main__title">Post a service request</h3>
+                    <form class="post-request-form">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="inputName" placeholder="First/Last Name">
+                            <input type="text" class="form-control" id="zipCode" placeholder="Your ZIP Code">
                         </div>
                         <div class="form-group">
-                            <input type="number" class="form-control" id="phoneNumber" placeholder="Phone Number">
+                            <label for="formSelect" class="form-group__label">Select your service*</label>
+                            <select class="form-control" id="formSelect">
+                                <option>Housekeeping</option>
+                                <option>Housekeeping2</option>
+                                <option>Housekeeping3</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
+                            <label for="formTextarea" class="form-group__label">Tell us about the job*</label>
+                            <textarea class="form-control" id="formTextarea" rows="4" placeholder="Please, describe the job in detail.."></textarea>
                         </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="passwordInput" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat password">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="zipCode" placeholder="ZipCode">
-                        </div>
-                        <div class="form-group form-group__actions">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                <label class="custom-control-label" for="customCheck2">*I accept your <a href="#">Terms of Conditions</a> and <a href="#">Privacy Policy</a>.</label>
+                        <div class="form-row">
+                            <label class="form-group__label">Set up the date and time of arrival*</label>
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="inputDate" placeholder="mm/dd">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="inputTime" placeholder="Time">
                             </div>
                         </div>
+                        <div class="form-row">
+                            <label class="form-group__label">Offer your price*</label>
+                            <div class="form-group form-group__price">
+                                <input type="text" class="form-control">
+                                <div class="currency">GBP</div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Total</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Per Hour</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailAddress" class="form-group__label">Email Address*</label>
+                            <input type="text" class="form-control" id="emailAddress">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName" class="form-group__label">First/Last Name*</label>
+                            <input type="text" class="form-control" id="inputName">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber" class="form-group__label">Phone Number*</label>
+                            <input type="text" class="form-control" id="phoneNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordInput" class="form-group__label">Password*</label>
+                            <input type="text" class="form-control" id="passwordInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="repeatPassword" class="form-group__label">Repeat password*</label>
+                            <input type="text" class="form-control" id="repeatPassword">
+                        </div>
+                        <div class="form-row form-row__actions">
+                            <a href="" class="pay-cash col-md-5">Pay In Cash</a>
+                            <a href="" class="pay-card active col-md-5">Pay By Card</a>
+                        </div>
+                        <p class="additiona-info">*By clicking Send Request, you agree with our <a href="#">Terms of Conditions</a>
+                            and <a href="#">Privacy Policy</a>.</p>
                         <div class="form-group form-group__submit">
-                            <button class="btn btn--blue btn-lg btn-primary btn-block text-uppercase" type="submit">Sign up</button>
+                            <button class="btn btn--blue btn-lg btn-primary btn-block text-uppercase" type="submit">Post Request</button>
                         </div>
                     </form>
-                    <div class="divided-line">
-                        <h2><span>or</span></h2>
-                    </div>
-                    <div class="connect-types">
-                        <p class="connect-types__title">Connect with</p>
-                        <div class="connect-types__items">
-                            <a href="#" class="facebook-connect">
-                                <svg aria-hidden="true" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-9" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512"><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg>
-                            </a>
-                            <a href="#" class="google-connect">
-                                <svg aria-hidden="true" data-prefix="fab" data-icon="google" class="svg-inline--fa fa-google fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path></svg>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
