@@ -4,8 +4,8 @@
   background-size: cover;
   background-image: linear-gradient(
                   to right bottom,
-                  rgba($color-grey, 0.4),
-                  rgba($color-grey, 0.4)
+                  rgba(#343434, 0.4),
+                  rgba(#343434, 0.4)
   ),
   url(/images/hero-image.jpg);
   background-position: top;
@@ -14,7 +14,7 @@
   align-items: center;
   &__content-inner {
     .login-main{
-      background: $color-white;
+      background: #fff;
       border-radius: 14px;
       padding: 6rem 4rem;
       &__title{
@@ -55,7 +55,7 @@
               height: auto;
             }
             .forgot-action{
-              color: $color-black;
+              color: #000;
             }
           }
           &__submit{
@@ -66,7 +66,7 @@
               padding: 1.4rem;
             }
             a{
-              color: $color-black;
+              color: #000;
               display: block;
               font-family: SFProTextLight;
               letter-spacing: 0.01rem;
@@ -85,14 +85,14 @@
           font-family: SFProTextLight;
           width: 100%;
           text-align: center;
-          border-bottom: 0.1rem solid $color-grey-light-3;
+          border-bottom: 0.1rem solid #D0D0D0;
           line-height: 0.1rem;
           margin: 1rem 0 2rem;
         }
 
         h2 span {
           background:#fff;
-          color: $color-grey-light-3;
+          color: #D0D0D0;
           font-size: 1.5rem;
           padding:0 3rem;
           text-transform: uppercase;
@@ -113,7 +113,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: $color-black;
+            color: #000;
             height: 3.8rem;
             width: 5.4rem;
             box-shadow: 0 1px 5px 0 rgba(56,56,56,0.51);
@@ -125,7 +125,7 @@
             &.facebook-connect{
               background: #3B5998;
               path{
-                fill: $color-white;
+                fill: #fff;
               }
             }
             &.google-connect{
@@ -140,10 +140,4 @@
       }
     }
   }
-  //.hero-buttons {
-  //  width: 55%;
-  //  margin: 0 auto;
-  //  display: flex;
-  //  justify-content: space-around;
-  //}
 }

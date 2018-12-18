@@ -17,7 +17,7 @@ $(document).ready(function () {
 
   // Color stars
   function stars() {
-    var star_tap = $('.stars-section .fa-star');
+    var star_tap = $('.leave-rating .stars-section .fa-star');
     star_tap.on('click', function () {
       console.log('click');
       $(this).removeClass('color_star').removeClass('current');
