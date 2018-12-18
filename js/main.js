@@ -1,14 +1,14 @@
-import slick from 'slick-carousel';
 import $ from 'jquery';
 
 $(document).ready(function () {
-    $('.carousel--multiple-items').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrow: true,
-    });
-
+    if ($('body').hasClass('home-page')) {
+        $('.carousel--multiple-items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrow: true,
+        });
+    }
     $('.form-row__actions a').on('click', function (e) {
       e.preventDefault();
       $('.form-row__actions a').removeClass('active');

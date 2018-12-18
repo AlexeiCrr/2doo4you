@@ -71,46 +71,25 @@
             </div>
         </nav>
     </header>
-    <section class="section-login">
-        <div class="section-login__content-inner container">
-            <div class="row justify-content-md-center">
-                <div class="col-md-6 login-main">
-                    <h3 class="login-main__title">Login</h3>
-                    <form class="login-form">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                        </div>
-                        <div class="form-group form-group__actions">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Remember me</label>
-                            </div>
-                            <a href="#" class="forgot-action">Forgot password?</a>
-                        </div>
-                        <div class="form-group form-group__submit">
-                            <button class="btn btn--blue btn-lg btn-primary btn-block text-uppercase" type="submit">Login</button>
-                            <a href="#">Not member yet? <span>Sign up</span></a>
-                        </div>
-                    </form>
-                    <div class="divided-line">
-                        <h2><span>or</span></h2>
-                    </div>
-                    <div class="connect-types">
-                        <p class="connect-types__title">Connect with</p>
-                        <div class="connect-types__items">
-                            <a href="#" class="facebook-connect">
-                                <svg aria-hidden="true" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-9" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512"><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg>
-                            </a>
-                            <a href="#" class="google-connect">
-                                <svg aria-hidden="true" data-prefix="fab" data-icon="google" class="svg-inline--fa fa-google fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <section class="section-book-services">
+        <div class="container-big">
+            <h1 class="page-title heading-secondary text-color-black">We can help you in a few hours or minutes. We are
+                really close...</h1>
+            <p class="suggestion">Please make sure, your location on map is right.</p>
+        </div>
+        <div class="map-wrapper">
+            <input id="pac-input" class="controls" type="text" placeholder="Search your location">
+            <div id="map"></div>
+        </div>
+        <div class="section-professionals">
+            <div class="section-professionals__header-block flex-row d-flex justify-content-between">
+              <div class="block-left ">
+                  <h1> All Services</h1>
+                  <h5>Professionals</h5>
+              </div>
+                <p>Sort By</p>
             </div>
+            <div class="section-professionals__content-block"></div>
         </div>
     </section>
     <footer class="site-footer mt-auto">
@@ -143,6 +122,75 @@
         </div>
     </footer>
 </main>
+<script>
+    function initAutocomplete() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -33.8688, lng: 151.2195},
+            zoom: 13,
+            mapTypeId: 'roadmap'
+        });
+
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function () {
+            searchBox.setBounds(map.getBounds());
+        });
+
+        var markers = [];
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener('places_changed', function () {
+            var places = searchBox.getPlaces();
+
+            if (places.length == 0) {
+                return;
+            }
+
+            // Clear out the old markers.
+            markers.forEach(function (marker) {
+                marker.setMap(null);
+            });
+            markers = [];
+
+            // For each place, get the icon, name and location.
+            var bounds = new google.maps.LatLngBounds();
+            places.forEach(function (place) {
+                if (!place.geometry) {
+                    console.log("Returned place contains no geometry");
+                    return;
+                }
+                var icon = {
+                    url: place.icon,
+                    size: new google.maps.Size(71, 71),
+                    origin: new google.maps.Point(0, 0),
+                    anchor: new google.maps.Point(17, 34),
+                    scaledSize: new google.maps.Size(25, 25)
+                };
+
+                // Create a marker for each place.
+                markers.push(new google.maps.Marker({
+                    map: map,
+                    icon: icon,
+                    title: place.name,
+                    position: place.geometry.location
+                }));
+
+                if (place.geometry.viewport) {
+                    // Only geocodes have viewport.
+                    bounds.union(place.geometry.viewport);
+                } else {
+                    bounds.extend(place.geometry.location);
+                }
+            });
+            map.fitBounds(bounds);
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6ai3Hfab1UcXhr6PwspVQoTpc-ZVYS-k&libraries=places&callback=initAutocomplete"></script>
 <script src="./index.js"></script>
 </body>
 </html>

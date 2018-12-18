@@ -1,0 +1,68 @@
+.section-became-pro {
+  min-height: 50rem;
+  .hero-image {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    .block-welcome {
+      position: absolute;
+      right: 0;
+      bottom: 15rem;
+      background: rgba($color-primary, .8);
+      padding: 5rem;
+      .block-heading {
+        font-family: SFProTextHeavy, sans-serif;
+        font-size: 4rem;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .advertising-text {
+        max-width: 40rem;
+        margin: 0 auto 4.5rem auto;;
+        font-size: 1.8rem;
+        font-family: SFProText, sans-serif;
+        text-align: center;
+        color: $color-white;
+        letter-spacing: 0.11px;
+      }
+      .download-text {
+        color: $white;
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+      .badge-wrapper {
+        justify-content: space-evenly;
+        .badge {
+          width: 15rem;
+          margin: 0;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .pro-services-icon {
+      position: absolute;
+      top: 5rem;
+      left: 6.4rem;
+      img {
+        width: 16.5rem;
+      }
+    }
+    .text-main {
+      max-width: 62rem;
+      position: absolute;
+      bottom: 10rem;
+      left: 10rem;
+      text-align: center;
+      .page-title {
+        font-size: 6rem;
+      }
+      .heading-sub {
+        color: $color-white;
+        font-size: 2.5rem;
+        letter-spacing: 0.21px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.section-book-services {
+  padding: 6rem;
+  .page-title {
+    font-family: OpenSans,sans-serif;
+    font-weight: $font-weight-semibold;
+    text-transform: initial;
+    margin-bottom: 1.8rem;
+  }
+  .suggestion {
+    margin-bottom: 2.6rem;
+    font-family: OpenSans, sans-serif;
+    font-size: 1.8rem;
+    color: #3C3C3C;
+    letter-spacing: 0.11px;
+  }
+  #map {
+    margin-bottom: 5.5rem;
+  }
+}
