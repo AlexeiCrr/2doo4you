@@ -2,6 +2,9 @@
   padding: 4rem 0;
   &__content-inner {
     .post-request-main{
+      @media (max-width: 768px) {
+        margin-top: 2.5rem;
+      }
       &__title{
         font-size: 2rem;
         color: $color-primary;
@@ -62,6 +65,7 @@
               font-size: 2.5rem;
               letter-spacing: 0.016rem;
               padding: 1.4rem;
+              height: auto;
             }
           }
           &__price{
@@ -126,6 +130,9 @@
             font-size: 1.7rem;
             height: 4.6rem;
             letter-spacing: 0.012rem;
+            @media (max-width: 768px) {
+              margin-bottom: 1.5rem;
+            }
             &.active, &:hover{
               background: #686868;
               color: $color-white;
@@ -172,11 +179,17 @@
         }
         .user-review{
           display: flex;
+          @media (max-width: 768px) {
+            flex-direction: column;
+          }
           .reviews-count{
             font-family: SFProTextLight;
             margin-left: 1rem;
             font-size: 1.5rem;
             letter-spacing: 0.09rem;
+            @media (max-width: 768px) {
+              margin-left: 0 !important;
+            }
           }
         }
         .insurance-presence{

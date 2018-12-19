@@ -35,5 +35,19 @@ $(document).ready(function () {
     });
   }
 
+
+  $('.minimize').on('click', function(){
+    $(this).parent().parent().addClass('minimized');
+  });
+
+  $('.service-type__minimize-title').on('click', function(){
+    $(this).parent().parent().removeClass('minimized');
+  });
+
+  $('.close').on('click', function(){
+    $(this).parent().parent().addClass('closed');
+  });
+
+
   stars();
 });
