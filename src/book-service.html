@@ -9,14 +9,11 @@
 <body>
 <main role="main" class="main">
     <header class="site-header">
-
         <nav class="navbar">
+            <a class="navbar-brand site-logo" href="index.html">
+                <img src="./images/logo.png" alt="Site logo">
+            </a>
             <ul class="menu">
-                <li>
-                    <a class="navbar-brand site-logo" href="#">
-                        <span class="d-inline-block align-top">Logo</span>
-                    </a>
-                </li>
                 <li class="dropdown dropdown--services">
                     <a href="#">Services</a>
                     <ul class="dropdown__content">
@@ -62,14 +59,59 @@
                     </li>
                 </ul>
                 <div class="form-group">
-                    <select title="Language selector" class="selectpicker language-dropdown">
-                        <option> ENG</option>
+                    <select title="Language selector"  data-width="fit" class=" custom-select selectpicker language-dropdown">
+                        <option>ENG</option>
                         <option>RUS</option>
                         <option>GER</option>
                     </select>
                 </div>
+
+            </div>
+            <div id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
+        <div class="sidebar">
+            <ul class="mobile-menu-sidebar">
+                <li class="dropdown second-level__trigger">
+                    <a href="#">Services</a>
+                    <ul class="second-level__content">
+                        <li>
+                            <a href="#">Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Garden/Outdoor</a>
+                        </li>
+                        <li>
+                            <a href="#">Plumbing</a>
+                        </li>
+                        <li>
+                            <a href="#">Electrical</a>
+                        </li>
+                        <li>
+                            <a href="#">Tradesman</a>
+                        </li>
+                        <li>
+                            <a href="#">IT</a>
+                        </li>
+                        <li>
+                            <a href="#">See All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Became Pro</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <section class="section-book-services">
         <div class="container-big">
@@ -83,13 +125,417 @@
         </div>
         <div class="section-professionals">
             <div class="section-professionals__header-block flex-row d-flex justify-content-between">
-              <div class="block-left ">
-                  <h1> All Services</h1>
-                  <h5>Professionals</h5>
-              </div>
-                <p>Sort By</p>
+                <div class="block-left ">
+                    <h1 class="heading-all-services"> All Services</h1>
+                </div>
+                <div class="sort">
+                    <ul class="js-badger-accordion">
+                        <li>Sort By</li>
+                        <li><a class="filter-link" href="#">Most Popular</a></li>
+                        <li>
+                            <div class="filter-link js-badger-accordion-header font-weight-normal expand-selection">
+                                See All
+                            </div>
+                        </li>
+                        <li class="badger-accordion__panel js-badger-accordion-panel">
+                            <ul class="js-badger-accordion-panel-inner">
+                                <li><a class="filter-link" href="#">A - Z</a></li>
+                                <li><a class="filter-link" href="#">Z - A </a></li>
+                                <li><a class="filter-link" href="#"> Closest</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="section-professionals__content-block"></div>
+            <div class="section-professionals__content-block">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    Cleaning
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    Garden/Outdoor
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    Tradesman
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    Plumbing
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    Electrical
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    IT
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    Smart Devices
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    Events/Business
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    Painting
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    Moving
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    Storage
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    Beauty
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    Art/Photo/Video
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="js-badger-accordion">
+                            <li>
+                                <div class="js-badger-accordion-header font-weight-bold">
+                                    Car
+                                </div>
+                            </li>
+                            <li class="badger-accordion__panel js-badger-accordion-panel">
+                                <ul class="js-badger-accordion-panel-inner">
+                                    <li><a href="#">Housekeeping</a></li>
+                                    <li><a href="#">Move in/out cleaning</a></li>
+                                    <li><a href="#">Kitchen cleaning</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Upholstery</a></li>
+                                    <li><a href="#">Room cleaning</a></li>
+                                    <li><a href="#">Carpet cleaning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="professionals">
+                            <h4>Professionals</h4>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="specialist">
+                                        <div class="specialist__image" style="background-image: url('/images/user-avatar.png');"></div>
+                                        <p class="specialist__name">
+                                            Ryan Foster
+                                        </p>
+                                        <div class="specialist__rating stars-section">
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="far fa-star "></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="specialist">
+                                        <div class="specialist__image" style="background-image: url('/images/user-avatar.png');"></div>
+                                        <p class="specialist__name">
+                                            Ryan Foster
+                                        </p>
+                                        <div class="specialist__rating stars-section">
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="far fa-star "></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="specialist">
+                                        <div class="specialist__image" style="background-image: url('/images/user-avatar.png');"></div>
+                                        <p class="specialist__name">
+                                            Ryan Foster
+                                        </p>
+                                        <div class="specialist__rating stars-section">
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="far fa-star "></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="specialist">
+                                        <div class="specialist__image" style="background-image: url('/images/user-avatar.png');"></div>
+                                        <p class="specialist__name">
+                                            Ryan Foster
+                                        </p>
+                                        <div class="specialist__rating stars-section">
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="far fa-star "></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="specialist">
+                                        <div class="specialist__image" style="background-image: url('/images/user-avatar.png');"></div>
+                                        <p class="specialist__name">
+                                            Ryan Foster
+                                        </p>
+                                        <div class="specialist__rating stars-section">
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="far fa-star "></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="specialist">
+                                        <div class="specialist__image" style="background-image: url('/images/user-avatar.png');"></div>
+                                        <p class="specialist__name">
+                                            Ryan Foster
+                                        </p>
+                                        <div class="specialist__rating stars-section">
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="far fa-star "></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="specialist">
+                                        <div class="specialist__image" style="background-image: url('/images/user-avatar.png');"></div>
+                                        <p class="specialist__name">
+                                            Ryan Foster
+                                        </p>
+                                        <div class="specialist__rating stars-section">
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="fas fa-star color_star"></i>
+                                            <i class="far fa-star "></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav aria-label="Professionals block pagination">
+                    <ul class="professionals-pagination pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fas fa-angle-left"></i></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="fas fa-angle-right"></i></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </section>
     <footer class="site-footer mt-auto">

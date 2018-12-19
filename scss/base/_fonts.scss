@@ -1,8 +1,8 @@
 //Open Sans
-@include font-face(OpenSans, fonts/OpenSans-Bold, bold, null, ttf);
-@include font-face(OpenSans, fonts/OpenSans-Light, light, null, ttf);
-@include font-face(OpenSans, fonts/OpenSans-Regular, regular, null, ttf);
-@include font-face(OpenSans, fonts/OpenSans-SemiBold, semibold, null, ttf);
+@include font-face(OpenSans-Bold, fonts/OpenSans-Bold, bold, null, ttf);
+@include font-face(OpenSans-Light, fonts/OpenSans-Light, light, null, ttf);
+@include font-face(OpenSans-Regular, fonts/OpenSans-Regular, regular, null, ttf);
+@include font-face(OpenSans-Semibold, fonts/OpenSans-SemiBold, semibold, null, ttf);
 //SFProText
 @include font-face(SFProTextBold, fonts/SFProText-Bold, bold, null, ttf);
 @include font-face(SFProTextHeavy, fonts/SFProText-Heavy, heavy, null, ttf);

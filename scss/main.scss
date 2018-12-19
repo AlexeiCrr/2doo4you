@@ -14,10 +14,13 @@
 @import "components/hero-section";
 @import "layout/login-section";
 @import "layout/sign-up-customer-section";
-@import "layout/post-request-section";
+@import "layout/section-post-request";
 @import "components/carousel";
 @import "components/badges";
 @import "components/map";
+@import "components/accordion";
+@import "components/sort";
+@import "components/_mobile-menu.scss";
 //Layout components
 @import "layout/header";
 @import "layout/footer";

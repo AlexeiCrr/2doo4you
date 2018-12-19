@@ -1,7 +1,23 @@
 .badge-wrapper {
   display: flex;
+  @include respond(phone) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .badge {
-    width: 242px;
+    width: 24.2rem;
     margin-right: 4.8rem;
+    @include respond(tab-port) {
+      img {
+        width: 20rem;
+      }
+      margin-right:3.5rem;
+    }
+    @include respond(phone) {
+      margin-right: 0;
+      margin-bottom:2rem;
+      text-align: center;
+    }
   }
 }

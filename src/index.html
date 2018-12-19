@@ -11,12 +11,10 @@
 <main role="main" class="main">
     <header class="site-header">
         <nav class="navbar">
+            <a class="navbar-brand site-logo" href="index.html">
+                <img src="./images/logo.png" alt="Site logo">
+            </a>
             <ul class="menu">
-                <li>
-                    <a class="navbar-brand site-logo" href="index.html">
-                        <img src="./images/logo.png" alt="Site logo">
-                    </a>
-                </li>
                 <li class="dropdown dropdown--services">
                     <a href="#">Services</a>
                     <ul class="dropdown__content">
@@ -62,14 +60,59 @@
                     </li>
                 </ul>
                 <div class="form-group">
-                    <select title="Language selector" class="selectpicker language-dropdown">
+                    <select title="Language selector"  data-width="fit" class=" custom-select selectpicker language-dropdown">
                         <option>ENG</option>
                         <option>RUS</option>
                         <option>GER</option>
                     </select>
                 </div>
+
+            </div>
+            <div id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
+        <div class="sidebar">
+            <ul class="mobile-menu-sidebar">
+                <li class="dropdown second-level__trigger">
+                    <a href="#">Services</a>
+                    <ul class="second-level__content">
+                        <li>
+                            <a href="#">Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Garden/Outdoor</a>
+                        </li>
+                        <li>
+                            <a href="#">Plumbing</a>
+                        </li>
+                        <li>
+                            <a href="#">Electrical</a>
+                        </li>
+                        <li>
+                            <a href="#">Tradesman</a>
+                        </li>
+                        <li>
+                            <a href="#">IT</a>
+                        </li>
+                        <li>
+                            <a href="#">See All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Became Pro</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <div class="hero-image"
          style="background-image: linear-gradient( to right bottom,rgba(108, 122, 137, .4),rgba(108, 122, 137, .4)),url('images/hero-image.jpg');">
@@ -89,30 +132,48 @@
             <div class="section-title--sub">We provide the best services only for you.</div>
         </div>
 
-        <div class="carousel carousel--multiple-items" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
-            <div class=" carousel__item" style="background-image: url('images/plumbing.jpg')">
-                <div class="mask">
-                    <span class="carousel__text">Plumbing</span>
+        <div class="carousel carousel--multiple-items">
+            <div class="carousel__item">
+                <div class="carousel__image" style="background-image: url('images/plumbing.jpg')">
+                    <div class="mask">
+                        <span class="carousel__text">Plumbing</span>
+                    </div>
                 </div>
             </div>
-            <div class=" carousel__item" style="background-image: url('images/code.jpg')">
-                <div class="mask">
-                    <span class="carousel__text">IT</span>
+            <div class=" carousel__item">
+                <div class="carousel__image" style="background-image: url('images/code.jpg')">
+                    <div class="mask">
+                        <span class="carousel__text">IT</span>
+                    </div>
                 </div>
             </div>
-            <div class=" carousel__item" style="background-image: url('images/gardening.jpg')">
-                <div class="mask">
-                    <span class="carousel__text">Gardening</span>
+            <div class=" carousel__item">
+                <div class="carousel__image" style="background-image: url('images/gardening.jpg')">
+                    <div class="mask">
+                        <span class="carousel__text">Gardening</span>
+                    </div>
                 </div>
             </div>
-            <div class=" carousel__item" style="background-image: url('images/cleaning.jpg')">
-                <div class="mask">
-                    <span class="carousel__text">Cleaning</span>
+            <div class=" carousel__item">
+                <div class="carousel__image" style="background-image: url('images/cleaning.jpg')">
+                    <div class="mask">
+                        <span class="carousel__text">Cleaning</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" carousel__item">
+                <div class="carousel__image" style="background-image: url('images/tradesman.jpg')">
+                    <div class="mask">
+                        <span class="carousel__text">Tradesmen</span>
+                    </div>
                 </div>
             </div>
-            <div class=" carousel__item" style="background-image: url('images/tradesman.jpg')">
-                <div class="mask">
-                    <span class="carousel__text">Tradesmen</span>
+            <div class=" carousel__item">
+                <div class="carousel__image" style="background-image: url('images/electricalServices.png')">
+                    <div class="mask">
+                        <span class="carousel__text">Electricians</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -182,6 +243,7 @@
                     </a>
                 </div>
             </div>
+            <div class="pointing-guy"></div>
         </div>
     </section>
     <footer class="site-footer mt-auto">

@@ -9,14 +9,11 @@
 <body>
 <main role="main" class="main">
     <header class="site-header">
-
         <nav class="navbar">
+            <a class="navbar-brand site-logo" href="index.html">
+                <img src="./images/logo.png" alt="Site logo">
+            </a>
             <ul class="menu">
-                <li>
-                    <a class="navbar-brand site-logo" href="#">
-                        <span class="d-inline-block align-top">Logo</span>
-                    </a>
-                </li>
                 <li class="dropdown dropdown--services">
                     <a href="#">Services</a>
                     <ul class="dropdown__content">
@@ -62,14 +59,59 @@
                     </li>
                 </ul>
                 <div class="form-group">
-                    <select title="Language selector" class="selectpicker language-dropdown">
-                        <option> ENG</option>
+                    <select title="Language selector"  data-width="fit" class=" custom-select selectpicker language-dropdown">
+                        <option>ENG</option>
                         <option>RUS</option>
                         <option>GER</option>
                     </select>
                 </div>
+
+            </div>
+            <div id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
+        <div class="sidebar">
+            <ul class="mobile-menu-sidebar">
+                <li class="dropdown second-level__trigger">
+                    <a href="#">Services</a>
+                    <ul class="second-level__content">
+                        <li>
+                            <a href="#">Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Garden/Outdoor</a>
+                        </li>
+                        <li>
+                            <a href="#">Plumbing</a>
+                        </li>
+                        <li>
+                            <a href="#">Electrical</a>
+                        </li>
+                        <li>
+                            <a href="#">Tradesman</a>
+                        </li>
+                        <li>
+                            <a href="#">IT</a>
+                        </li>
+                        <li>
+                            <a href="#">See All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Became Pro</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <section class="section-became-pro">
         <div class="hero-image"

@@ -1,0 +1,139 @@
+$transition-time: 0.2s;
+
+@mixin base-trans {
+  transition: all ease-in-out $transition-time;
+}
+
+.vh {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.vh.focusable:active,
+.vh.focusable:focus {
+  position: static;
+  overflow: visible;
+  width: auto;
+  height: auto;
+  margin: 0;
+  clip: auto;
+}
+
+.inline-list {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inline-list__item {
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-link:hover {
+  }
+}
+
+.icon-link__text {
+  @include base-trans;
+}
+
+.js-badger-accordion-header {
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.12px;
+  cursor: pointer;
+}
+
+.badger-accordion__panel {
+  max-height: 75vh;
+  overflow: hidden;
+  background: $color-white;
+  // scss-lint:disable ImportantRule
+  &.-ba-is-hidden {
+    max-height: 0 !important;
+  }
+
+  // transition is added via `badger-accordion--initalised` to stop animation on initalition
+  .badger-accordion--initalised & {
+    transition: max-height ease-in-out 0.2s;
+  }
+}
+
+// ==========================================================================
+// # DEMO ACCORDION
+// ==========================================================================
+
+.badger-accordion {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .1), 0 1px 4px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.badger-accordion__header {
+  &:not(:last-of-type) {
+    border-bottom: 1px solid #EFF1F0;
+  }
+}
+
+.badger-accordion__trigger {
+  align-content: space-between;
+  align-items: center;
+  background-color: $white;
+  border: 0;
+  border-radius: 0px;
+  display: flex;
+  font-size: 1.25rem;
+  line-height: 1;
+  text-align: left;
+  transition: all ease-in-out $transition-time;
+  width: 100%;
+
+  &:focus,
+  &:hover {
+    background-color: $green;
+    cursor: pointer;
+    outline: none;
+
+    .badger-accordion__trigger-title {
+      color: $white;
+    }
+
+    .badger-accordion__trigger-icon {
+      &:after,
+      &:before {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.badger-accordion__trigger-title {
+  font-size: 1.2rem;
+  transition: ease-in-out 0.3s;
+}
+
+.badger-accordion__panel {
+  background-color: $color-white;
+  position: relative;
+  @include transition();
+
+  .js-badger-accordion-panel-inner {
+    padding-left: 10px;
+    li {
+      a {
+        font-family: SFProText, sans-serif;
+        font-size: 18px;
+        letter-spacing: 0.15px;
+        color: $color-black;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .site-header {
+  position: relative;
   font-family: CocomatLight, sans-serif;
-  font-weight: $font-weight-light;
   height: 70px;
   padding: 0 3.6rem 0 5rem;
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.03);
@@ -16,9 +16,17 @@
     .menu {
       display: flex;
       align-items: center;
+      margin-right: auto;
+      margin-left: 6rem;
+      @include respond(tab-port) {
+        display: none;
+      }
       li {
         margin-right: 5rem;
         cursor: pointer;
+        & > a {
+          padding: 2rem 0;
+        }
         &:hover {
           ul {
             opacity: 1;
@@ -56,6 +64,9 @@
     .block-right {
       display: flex;
       align-items: center;
+      @include respond(tab-port) {
+        display: none;
+      }
     }
     .dropdown {
       position: relative;
@@ -103,7 +114,10 @@
     .selectpicker {
       border: none;
       cursor: pointer;
-      margin-left: 4.5rem;
+      margin-left: 2.5rem;
+      option {
+        border: none;
+      }
     }
   }
 }

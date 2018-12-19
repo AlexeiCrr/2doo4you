@@ -1,0 +1,19 @@
+.sort {
+  position: absolute;
+  right: 30px;
+  z-index: 20;
+  .badger-accordion__panel .js-badger-accordion-panel-inner li a {
+    font-size: 14px;
+    color: $black;
+    font-family: OpenSans-Light, sans-serif;
+  }
+  .filter-link {
+    font-size: 14px;
+    color: $color-black;
+    font-family: OpenSans-Light, sans-serif;
+  }
+  .js-badger-accordion-panel-inner {
+    background-color: $color-white;
+    @include shadow;
+  }
+}

@@ -1,6 +1,9 @@
 .section-app {
   padding: 14rem 11rem;
   position: relative;
+  @include respond(tab-port) {
+    padding: 10rem 5rem 13rem 5rem;
+  }
   .smartphone {
     background-image: url('/images/iphone.png');
     background-position: center ;
@@ -11,10 +14,38 @@
     position: absolute;
     width: 30rem;
     height: 54rem;
+    @include respond(tab-port) {
+      left: 3rem;
+    }
+    @include respond(phone) {
+      display: none;
+    }
   }
+  .pointing-guy {
+    background-image: url('/images/pointing-guy.png');
+    background-position: center ;
+    background-size: contain;
+    width: 32rem;
+    height: 46rem;
+    position: absolute;
+    bottom: 0;
+    right: 4rem;
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
   .text-content {
     max-width: 50%;
     margin: 0 auto;
+    @include respond(tab-port) {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+    @include respond(phone) {
+      max-width:100%;
+    }
     p {
       max-width: 50rem;
       font-size: 2.2rem;

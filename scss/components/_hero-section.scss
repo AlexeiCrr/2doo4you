@@ -2,8 +2,16 @@
   margin-bottom: 15rem;
   height: 90vh;
   position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  @include respond(tab-port) {
+    height: 60vh;
+  }
+  @include respond(phone) {
+    height:50vh;
+  }
   &__content-inner {
     position: absolute;
     top: 50%;
@@ -11,11 +19,27 @@
     transform: translate(-50%, -50%);
     width: 80%;
     text-align: center;
+    .heading-primary {
+      font-size: 3.2rem;
+    }
   }
   .hero-buttons {
     width: 55%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    @include respond(tab-port) {
+      width:100%;
+    }
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .btn {
+        width: 25rem;
+        margin-bottom: 2rem;
+        padding: 1rem 2rem;
+      }
+    }
   }
 }

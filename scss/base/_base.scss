@@ -20,6 +20,10 @@ html {
   //}
 }
 
+//html, body {
+//  overflow-x: hidden;
+//}
+
 ul {
   margin-bottom: 0;
   li {
@@ -33,12 +37,14 @@ ul {
 
 body {
   box-sizing: border-box;
+  overflow-x: hidden;
   @include respond(tab-port) {
     padding: 0;
   }
 }
 
 a {
+  -webkit-font-smoothing: antialiased;
   &:hover {
     text-decoration: none;
   }

@@ -4,7 +4,9 @@
     margin-bottom: 6rem;
   }
   .carousel {
-    &__item {
+    width: 100%;
+    overflow-x: hidden;
+    &__image {
       height: 20.5rem;
       background-size: cover;
       background-repeat: no-repeat;
@@ -32,11 +34,23 @@
 /* the slides */
 .slick-slide {
   margin: 0 27px;
+  @include respond(tab-port) {
+    margin: 0;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
 }
 
 /* the parent */
 .slick-list {
   margin: 0 -27px;
+  @include respond(tab-port) {
+    margin: 0;
+  }
 }
 
 .slick-arrow {
@@ -46,6 +60,9 @@
   background: transparent;
   border: 0;
   outline: 0;
+  @include respond(tab-port) {
+    display: none ;
+  }
   &.slick-prev {
     left: -65px;
     font-size: 0;
