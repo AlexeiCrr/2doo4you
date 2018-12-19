@@ -4,8 +4,18 @@
   &__content-inner {
     .sign-up-info{
       color: $color-white;
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
       .sign-up__logo{
         margin: 20rem 0 10rem 0;
+        @media (max-width: 768px) {
+          margin: 5rem 0;
+        }
       }
       .sign-up__text-content{
         .text-content{
@@ -33,21 +43,33 @@
         padding: 1.5rem 0;
         a{
           margin-right: 2rem;
+          svg{
+            max-width: 240px;
+            height: 70px;
+            @include media-breakpoint-up(sm) {
+              max-width: 200px;
+            }
+            @media (max-width: 600px) {
+              max-width: 150px;
+            }
+          }
         }
       }
     }
     .post-request-main{
-      background: $color-white;
-      border-radius: 14px;
-      padding: 4rem 2rem 2rem 2rem;
       &__title{
-        font-family: SFProText;
-        font-weight: 600;
-        font-size: 3rem;
-        letter-spacing: 0.019rem;
-        margin-bottom: 2rem;
       }
       .post-request-form{
+        background: $color-white;
+        border-radius: 14px;
+        padding: 4rem 2rem 2rem 2rem;
+        .post-request-main__title{
+          font-family: SFProText;
+          font-weight: 600;
+          font-size: 3rem;
+          letter-spacing: 0.019rem;
+          margin-bottom: 2rem;
+        }
         .form-group{
           margin-bottom: 1.5rem;
           font-family: SFProTextLight;
@@ -155,6 +177,9 @@
             font-size: 1.7rem;
             height: 4.6rem;
             letter-spacing: 0.012rem;
+            @media (max-width: 768px) {
+              margin-bottom: 1.5rem;
+            }
             &.active, &:hover{
               background: #686868;
               color: $color-white;

@@ -37,14 +37,14 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
-    // Color stars
-    function stars() {
-        var star_tap = $('.stars-section .fa-star');
-        star_tap.on('click', function () {
-            console.log('click');
-            $(this).removeClass('color_star').removeClass('current');
-            $(this).removeClass('fas');
-            $(this).addClass('far');
+  // Color stars
+  function stars() {
+    var star_tap = $('.leave-rating .stars-section .fa-star');
+    star_tap.on('click', function () {
+      console.log('click');
+      $(this).removeClass('color_star').removeClass('current');
+      $(this).removeClass('fas');
+      $(this).addClass('far');
 
             var index = $(this).index();
             star_tap.each(function (i) {
@@ -57,7 +57,22 @@ $(document).ready(function () {
         });
     }
 
-    stars();
+
+  $('.minimize').on('click', function(){
+    $(this).parent().parent().addClass('minimized');
+  });
+
+  $('.service-type__minimize-title').on('click', function(){
+    $(this).parent().parent().removeClass('minimized');
+  });
+
+  $('.close').on('click', function(){
+    $(this).parent().parent().addClass('closed');
+  });
+
+
+  stars();
+
 });
 
 //Accordion

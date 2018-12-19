@@ -1,0 +1,322 @@
+.request-settings {
+  min-height: 50rem;
+  .heading-settings {
+    font-family: SFProTextBold, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    &__subtitle{
+      font-size: 1.3rem;
+      color: #BDBDBD;
+      letter-spacing: 0.008rem;
+      margin-bottom: 7rem;
+    }
+  }
+  .settings-tab {
+    display: flex;
+    min-height: 50rem;
+    @media (max-width: 768px){
+      flex-direction: column;
+    }
+    .row{
+      width: 100%;
+    }
+    .nav {
+      border-right: 1px solid #ECECEC;
+      @media (max-width: 768px) {
+        border: 0;
+      }
+    }
+    .nav-pills {
+      padding-top: 10rem;
+      padding-left: 4rem;
+      padding-right: 2rem;
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .tips {
+        display: none;
+        font-size: 13px;
+        max-width: 19rem;
+        letter-spacing: 0.08px;
+        color: #828282;
+      }
+      .nav-link {
+        font-family: SFProTextSemiBold;
+        font-size: 1.8rem;
+        color: $color-black;
+        padding-left: 0;
+        &.active {
+          font-family: SFProTextBold;
+          background: transparent;
+          color: $color-primary;
+        }
+      }
+    }
+    .tab-content {
+      padding-left: 6.4rem;
+      padding-top: 10rem;
+      @media (max-width: 768px) {
+        padding: 5rem;
+      }
+      .service-type{
+        background: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        box-shadow: 0 1px 12px 0 rgba(191,191,191,0.50);
+        border-top-right-radius: 1.6rem;
+        border-top-left-radius: 1.6rem;
+        position: relative;
+        min-height: 80rem;
+        &__rate{
+          min-height: 40rem !important;
+          transition:
+                  top .5s 0s cubic-bezier(.1, 1.2, .3, 1),
+                  transform .5s 0s cubic-bezier(.1, 1.2, .3, 1),
+                  width .5s .5s cubic-bezier(.1, 1.2, .3, 1),
+                  opacity .3s;
+          .professional-group{
+            @media (max-width: 768px) {
+              flex-direction: column;
+            }
+          }
+          &.minimized{
+            top: 100%;
+            left: 80%;
+            transform: translate(-50%, -30px);
+            width: 200px;
+            opacity: .5;
+            position: absolute;
+            z-index: 1;
+            height: 3rem !important;
+            min-height: 2rem !important;
+            overflow: hidden;
+            @media(max-width: 1200px){
+              top: calc(100% + 3px);
+            }
+            @media(max-width: 900px){
+              top: calc(100% + 5px);
+              left: 70%;
+            }
+            .service-type__minimize-title{
+              display: block !important;
+            }
+            .service-type__content{
+              display: none;
+            }
+            .minimize{
+              display: none;
+            }
+          }
+          .maximize{
+            top: 0;
+            opacity: 1;
+            transition:
+                    opacity .3s .5s,
+                    top 0s .5s;
+          }
+          &.closed{
+            display: none;
+          }
+          &__header{
+            padding: 4rem 5rem;
+            border-bottom: 1px solid #E6E6E6;
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 768px) {
+              flex-direction: column;
+              justify-content:center;
+              align-items:center;
+              text-align: center;
+            }
+          }
+          .service-type__content{
+            .leave-rating{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              &__text{
+                margin-top: 10rem;
+                font-family: SFProTextLight;
+                font-size: 2rem;
+                color: $color-grey-light-4;
+                letter-spacing: 0.012rem;
+                text-align: center;
+              }
+              .prof-review{
+                svg{
+                  height: 4rem;
+                  width: 4rem;
+                }
+              }
+            }
+          }
+        }
+        &__finished{
+          .finished-orders{
+            width: 100%;
+            thead{
+              tr{
+                th{
+                  font-family: SFProTextSemiBold;
+                  text-align: center;
+                  font-size: 1.6rem;
+                  letter-spacing: 0.011rem;
+                }
+              }
+            }
+            tbody{
+              tr{
+                padding: 2rem 0;
+                td{
+                  font-family: SFProTextLight;
+                  text-align: center;
+                  font-size: 1.5rem;
+                  letter-spacing: 0.009rem;
+                }
+              }
+              .prof-info{
+                .prof-card{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  .prof-img{
+                    height: 4.2rem;
+                    width: 4.2rem;
+                    border-radius: 50%;
+                    background: #D8D8D8;
+                    position: relative;
+                    background-size: cover;
+                    background-image: url(/images/user-avatar.png);
+                    background-position: center;
+                  }
+                  .prof-main-info{
+                    padding: 0 1rem;
+                    .prof-name{
+                      font-family: SFProTextLight;
+                      font-size: 1.5rem;
+                      letter-spacing: 0.009rem;
+                      margin-bottom: 0;
+                    }
+                    .prof-review{
+                      .stars-section{
+                        svg{
+                          height: 1.2rem;
+                          width: 1.2rem;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &__header{
+          padding: 4rem 5rem;
+          border-bottom: 1px solid #E6E6E6;
+          display: flex;
+          justify-content: space-between;
+        }
+        &__settings{
+          font-size: 1.8rem;
+          letter-spacing: 0.011rem;
+          .settings-label{
+            font-family: SFProTextSemiBold;
+            margin-bottom: 0.5rem;
+          }
+        }
+        &__content{
+          padding: 5rem;
+          .content-title{
+            font-size: 1.8rem;
+            letter-spacing: 0.011rem;
+            font-family: SFProTextSemiBold;
+          }
+          .professional-group{
+            margin-top: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .prof-card{
+              justify-content: center;
+              align-items: center;
+              .prof-img{
+                height: 7.5rem;
+                width: 7.5rem;
+                border-radius: 50%;
+                background: #D8D8D8;
+                position: relative;
+                background-size: cover;
+                background-image: url(/images/user-avatar.png);
+                background-position: center;
+              }
+              .prof-main-info{
+                margin-top: 0.5rem;
+                .prof-name{
+                  font-family: SFProTextLight;
+                  font-size: 1.5rem;
+                  letter-spacing: 0.009rem;
+                  margin-bottom: 0;
+                }
+                .prof-review{
+                  .stars-section{
+                    svg{
+                      height: 1.2rem;
+                      width: 1.2rem;
+                    }
+                  }
+                }
+              }
+            }
+            .prof-connect-info{
+              .prof-message{
+                font-family: SFProTextLight;
+                font-size: 1.6rem;
+                letter-spacing: 0.012rem;
+                margin-bottom: 1rem;
+              }
+              .prof-actions{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .price-tag{
+                  display: flex;
+                  flex-direction: column;
+                  &__label{
+                    font-family: SFProTextSemiBold;
+                    font-size: 1.8rem;
+                    letter-spacing: 0.011rem;
+                  }
+                }
+                .btn{
+                  font-family: SFProTextSemiBold;
+                  max-width: 15rem;
+                  height: 3.6rem;
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+        .service-type-actions{
+          display: flex;
+          position: absolute;
+          right: 1rem;
+          top: 0.5rem;
+          .action{
+            padding: 0 1rem;
+          }
+        }
+      }
+    }
+  }
+  .nav-link {
+    &.active {
+      .tips {
+        display: block;
+      }
+    }
+  }
+}
