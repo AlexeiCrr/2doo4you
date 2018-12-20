@@ -55,21 +55,36 @@ $(document).ready(function () {
         });
     }
 
-  $('.minimize').on('click', function(){
-    $(this).parent().parent().addClass('minimized');
-  });
 
-  $('.service-type__minimize-title').on('click', function(){
-    $(this).parent().parent().removeClass('minimized');
-  });
+const toggleServiceTabs = () => {
 
-  $('.close').on('click', function(){
-    $(this).parent().parent().addClass('closed');
-  });
+    const serviceType = document.getElementsByClassName('service-type__initial');
+    const serviceWrapperMin = $('.service-type__wrapper');
+    const serviceWrapper = $('#active-requests-tab');
+
+      let state = {
+        closed: true,
+      };
 
 
+    $('.minimize').on('click', function(e){
+        $(this).parent().parent().attr('closed', state.closed);
+        serviceWrapperMin.append($(this).parent().parent());
+        console.log(e.target);
+    });
+
+    $('.service-type__minimize-title').on('click', function(e){
+        $(this).parent().parent().removeAttr('closed');
+        serviceWrapper.append($(this).parent().parent());
+        console.log(e.target);
+    });
+
+    $('.close').on('click', function(){
+        $(this).parent().parent().addClass('closed');
+    });
+};
   stars();
-
+  toggleServiceTabs();
 });
 
 //Accordion
