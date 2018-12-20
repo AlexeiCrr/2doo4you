@@ -30,6 +30,13 @@
     position: absolute;
     bottom: 0;
     right: 4rem;
+    @include respond(tab-land) {
+      right: 0;
+      width: 21rem;
+      height: 30rem;
+      background-repeat: no-repeat;
+      bottom: 0;
+    }
     @include respond(tab-port) {
       display: none;
     }

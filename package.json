@@ -27,6 +27,7 @@
     "@fortawesome/fontawesome-free-regular": "^5.0.13",
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "autoprefixer": "^9.4.2",
+    "css-loader": "^2.0.1",
     "cssnano": "^4.1.7"
   }
 }

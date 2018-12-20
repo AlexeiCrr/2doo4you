@@ -87,16 +87,16 @@ $(document).ready(function () {
 //Mobile Menu
 $('#mobile-menu').click(toggleMenu);
 $('.second-level__trigger').click(toggleSecondLevelMenu);
-
 function toggleMenu() {
     $(this).toggleClass("active-menu");
     $('.sidebar').toggleClass('active-sidebar');
 }
-
 function toggleSecondLevelMenu() {
     $(this).toggleClass('menu-open');
     $('.second-level__content').toggleClass('active-second-level');
 }
+
+//Code to view elements that exceed body limits and cause vertical scroll
 
 // var docWidth = document.documentElement.offsetWidth;
 //
