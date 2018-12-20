@@ -2,14 +2,15 @@ import $ from 'jquery';
 import slick from 'slick-carousel';
 import BadgerAccordion from "badger-accordion";
 
-if ($('body').hasClass('home-page')) {
+$(document).ready(function () {
+
     $('.carousel--multiple-items').slick({
         infinite: true,
         slidesToShow: 3,
+        lazyLoad: true,
+        autoplay: true,
         slidesToScroll: 1,
-        // mobileFirst: true,
         arrow: true,
-        // respondTo: 'window',
         responsive: [
             {
                 breakpoint: 1100,
@@ -27,10 +28,7 @@ if ($('body').hasClass('home-page')) {
             },
         ]
     });
-}
 
-$(document).ready(function () {
-    //Home Page Carousel
     $('.form-row__actions a').on('click', function (e) {
         e.preventDefault();
         $('.form-row__actions a').removeClass('active');
@@ -56,7 +54,6 @@ $(document).ready(function () {
             });
         });
     }
-
 
   $('.minimize').on('click', function(){
     $(this).parent().parent().addClass('minimized');
