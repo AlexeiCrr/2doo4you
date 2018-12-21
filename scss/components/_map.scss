@@ -63,6 +63,11 @@
   outline: none;
   border: none;
   @include shadow;
+  @include respond(tab-port) {
+    left: 0!important;
+    top: 7rem!important;
+    width: 20rem;
+  }
 }
 
 #pac-input:focus {

@@ -4,21 +4,37 @@
     font-family: SFProTextBold, sans-serif;
     font-size: 3rem;
     margin-bottom: 7rem;
+    @include respond(tab-port) {
+      margin-bottom:3rem;
+    }
   }
   .settings-tab {
     display: flex;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
     .nav {
       border-right: 1px solid #ECECEC;
+      @include respond(tab-port) {
+        border-right: none;
+      }
     }
     .nav-pills {
       padding-top: 10rem;
       padding-right: 7rem;
+      @include respond(tab-port) {
+        padding: 5rem 5rem 0 5rem;
+      }
       .tips {
         display: none;
         font-size: 13px;
         max-width: 19rem;
         letter-spacing: 0.08px;
         color: #828282;
+        @include respond(tab-port) {
+          width:100%;
+          max-width: 100%;
+        }
       }
       .nav-link {
         font-family: SFProTextSemiBold;
@@ -34,8 +50,15 @@
       margin-left: 6.4rem;
       padding-top: 10rem;
       padding-bottom: 10rem;
+      @include respond(tab-port) {
+        margin: 0;
+        padding: 4rem;
+      }
       .form-group {
         width: 40rem;
+        @include respond(tab-port) {
+          width:100%;
+        }
         input {
           height: 5rem;
           border-radius: 8px;

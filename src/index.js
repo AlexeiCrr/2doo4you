@@ -1,5 +1,4 @@
-// import './../scss/main.scss';
-require('./../scss/main.scss');
+import './../scss/main.scss';
 import $ from 'jquery';
 import './../js/main';
 import slick from 'slick-carousel';

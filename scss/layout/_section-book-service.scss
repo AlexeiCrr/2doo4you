@@ -23,6 +23,11 @@
       text-transform: uppercase;
       position: absolute;
       top: -6.1rem;
+      @include respond(tab-land) {
+        position: initial;
+        text-align: right;
+        margin-bottom: 5rem;
+      }
     }
   }
   .professionals-pagination {
@@ -76,5 +81,19 @@
   }
   &__header-block {
     position: relative;
+  }
+  .service-types {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-professionals {
+    &__header-block {
+      position: relative;
+      @include respond(tab-port) {
+        .sort{
+          position: initial;
+        }
+      }
+    }
   }
 }

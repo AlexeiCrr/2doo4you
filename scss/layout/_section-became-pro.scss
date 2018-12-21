@@ -4,12 +4,24 @@
     margin: 0;
     height: 100vh;
     position: relative;
+    @include respond(tab-port) {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+    }
     .block-welcome {
       position: absolute;
       right: 0;
       bottom: 15rem;
       background: rgba($color-primary, .8);
       padding: 5rem;
+      @include respond(tab-port) {
+        padding: 2rem;
+        width: 100%;
+        bottom: 0;
+        position: initial;
+        order: 1;
+      }
       .block-heading {
         font-family: SFProTextHeavy, sans-serif;
         font-size: 4rem;
@@ -45,6 +57,11 @@
       position: absolute;
       top: 5rem;
       left: 6.4rem;
+      @include respond(tab-port) {
+        position: initial;
+        padding-top: 5rem;
+        padding-left: 6rem;
+      }
       img {
         width: 16.5rem;
       }
@@ -55,6 +72,15 @@
       bottom: 10rem;
       left: 10rem;
       text-align: center;
+      @include respond(tab-port) {
+        left: 5rem;
+        bottom: 25rem;
+        padding-bottom: 5rem;
+        position: initial;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+      }
       .page-title {
         font-size: 6rem;
       }
@@ -64,5 +90,8 @@
         letter-spacing: 0.21px;
       }
     }
+  }
+  .badge {
+    margin-bottom: 1rem;
   }
 }
