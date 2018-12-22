@@ -3,6 +3,9 @@
     background-color: $color-grey;
     font-family: CocomatLight;
     padding: 4rem 10rem;
+    @include respond(tab-port) {
+      padding: 2rem 5rem;
+    }
     .footer-nav {
       display: flex;
       flex-wrap: wrap;

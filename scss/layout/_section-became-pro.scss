@@ -5,7 +5,7 @@
     height: 100vh;
     position: relative;
     @include respond(tab-port) {
-      height: 80vh;
+      min-height: 80vh;
       display: flex;
       flex-direction: column;
     }
@@ -27,6 +27,9 @@
         font-size: 4rem;
         text-transform: uppercase;
         text-align: center;
+        @include respond(phone) {
+          font-size: 2.6rem;
+        }
       }
       .advertising-text {
         max-width: 40rem;
@@ -36,6 +39,9 @@
         text-align: center;
         color: $color-white;
         letter-spacing: 0.11px;
+        @include respond(phone) {
+          margin-bottom: 2rem;
+        }
       }
       .download-text {
         color: $white;
@@ -80,9 +86,15 @@
         width: 100%;
         max-width: 100%;
         text-align: center;
+        @include respond(phone) {
+          padding-bottom: 2rem;
+        }
       }
       .page-title {
         font-size: 6rem;
+        @include respond(phone) {
+          font-size: 4rem;
+        }
       }
       .heading-sub {
         color: $color-white;
