@@ -1,5 +1,4 @@
 .request-settings {
-  min-height: 50rem;
   .heading-settings {
     font-family: SFProTextBold, sans-serif;
     font-size: 3rem;
@@ -12,8 +11,6 @@
     }
   }
   .settings-tab {
-    display: flex;
-    min-height: 50rem;
     @media (max-width: 768px){
       flex-direction: column;
     }
@@ -319,4 +316,8 @@
       }
     }
   }
+}
+#finished-requests-tab {
+  position: absolute;
+  bottom: 0;
 }

@@ -5,7 +5,6 @@
   }
   .carousel {
     width: 100%;
-    overflow-x: hidden;
     &__image {
       height: 20.5rem;
       background-size: cover;
@@ -56,29 +55,22 @@
 .slick-arrow {
   position: absolute;
   top: 33%;
-  font-size: 0;
+  font-size: 4rem;
   background: transparent;
+  cursor: pointer;
   border: 0;
   outline: 0;
+  &:hover,&:focus {
+    outline: none;
+  }
   @include respond(tab-port) {
     display: none ;
   }
   &.slick-prev {
     left: -65px;
-    font-size: 0;
-    &:before {
-      font-family: FontAwesome;
-      content: '\f104';
-      font-size: 40px;
-    }
   }
   &.slick-next {
     right: -65px;
-    &:before {
-      content: '\f105';
-      font-family: FontAwesome;
-      font-size: 40px;
-    }
   }
 }
 .slick-frame {

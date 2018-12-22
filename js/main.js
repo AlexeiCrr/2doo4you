@@ -4,24 +4,27 @@ import BadgerAccordion from "badger-accordion";
 
 $(document).ready(function () {
 
-    $('.carousel--multiple-items').slick({
+    $('.carousel--multiple-items').not('.slick-initialized').slick({
         infinite: true,
         slidesToShow: 3,
         lazyLoad: true,
         autoplay: true,
         slidesToScroll: 1,
-        arrow: true,
+        arrows: true,
+        prevArrow: `<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>`,
+        nextArrow: `<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>`,
         responsive: [
             {
                 breakpoint: 1100,
                 settings: {
                     slidesToShow: 2,
-                    // arrow: false,
+                    arrows: false,
                 },
             },
             {
                 breakpoint: 800,
                 settings: {
+                    arrows: false,
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
