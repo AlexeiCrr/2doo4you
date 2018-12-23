@@ -83,8 +83,10 @@
     position: relative;
   }
   .service-types {
-    display: flex;
-    flex-wrap: wrap;
+    @include respond(tab-port) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   .section-professionals {
     &__header-block {
